@@ -1,0 +1,91 @@
+
+*{
+    margin: 0px 0px; padding: 0px 0px;
+
+}
+
+/* -----------------------------------------------Navbar----------------------------------------- */
+
+#navbar{
+    height: 10vh;
+    background-color:  #7ea9b4a2;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    color: red;
+}
+
+
+#login a{
+    color: rgb(30, 121, 124);
+    margin: 0px 40px;
+    padding: 2px 10px; 
+    text-decoration: none;
+}
+
+#login a:hover{
+    /* avoid padding margin inside hover */
+    border-radius: 8px;
+    background-color: rgba(32, 129, 173, 0.986);
+}
+
+
+.item{
+    color: rgb(124, 72, 30);
+    padding: 2px 10px;
+    text-decoration: none;
+}
+
+    .item:hover{
+        border-radius: 8px;
+        background-color: rgba(32, 129, 173, 0.986);
+
+    }
+
+    .item:active{
+        padding: 1px 9px;
+    }
+
+#logo img{ 
+    position: relative;
+    left: 12px;
+    height: 10vh;
+}
+
+
+
+/* -------------------------------------------homepage or landing image--------------------- */
+
+.homepage{
+    background-color: lightskyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    
+    color: rgb(190, 49, 131);
+
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+
+.homepage img{
+    
+    height: 300px; width: 300px;
+}
+
+/* .homepage h1,p {
+    color: black;
+} */
+
+.xyz p {
+    color: white;
+}
+
+.wxy h1 {
+    color: black;
+}
+

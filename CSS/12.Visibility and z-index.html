@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        /* we made these four boxes to demonstrate the visibility and z-index  */
+        
+        /* z-index: if there are multiple boxes and we want to over lap one box by some length to another box the we should use z index. */
+        /* the box whose z index value will be bigger that will overlap the lower z index value box */
+
+
+
+        #box1 {
+
+            /* important note */
+            /* z index is only work for element which are positioned by absolute,relative,fixed and sticky. */
+            /* it won't work for the static and by default position are static so we need to define its position  */
+            position:relative;  /*very important to give position before z-indexes*/
+            top: 100px;
+            z-index: 10;
+            background-color: green;
+        }
+
+        #box2 {
+            position: relative; /*very important to give position before z-indexes*/
+            z-index: 19; /*This will over lap the green box bcz it has higher index value*/
+            background-color: red;
+        }
+
+        #box3 {
+            background-color: blue;
+
+            /* This will hide the element and but will show the space of a hidden item */
+            /* visibility: hidden;  */
+
+            /* BOTH ARE ALTERNATIVE OF EACH OTHER ACCORDING TO NEED */
+
+            /* This will hide the element and will not show the empty spacs */
+            /* display: none; */
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- to get this four box class with incremental name i just type this given below -->
+    <!-- div.box#box$*4 + enter -->
+
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

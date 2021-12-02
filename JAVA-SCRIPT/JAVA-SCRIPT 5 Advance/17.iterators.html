@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iterators</title>
+</head>
+<body>
+    <script>
+        // it gives more control over loop.
+        let numbers = [100,200,300];
+        let iter = numbers[Symbol.iterator]();
+        console.log(iter.next())
+        console.log(iter.next())
+        console.log(iter.next())
+
+        //to skip array values
+        var ary = [101,201,301,401];
+        var itr = ary[Symbol.iterator]();
+        itr.next() //by not printing it in console it will be skipped
+        console.log(itr.next()) //201
+        itr.next() //skip
+        console.log(itr.next()) //401
+
+        //how to print value
+        var ary = [101, 201, 301, 401];
+        var itr = ary[Symbol.iterator]();
+        itr.next() //by not printing it in console it will be skipped
+        console.log(itr.next().value) //201
+        //done tells that if remaining aray has a value , it will show us false, if there is no value then it wiill show us true.
+        console.log(itr.next().done) //false
+        console.log(itr.next().value) //301
+        //now we have used our all next(four times, four value called) it will showing true
+        console.log(itr.next().done) //true
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

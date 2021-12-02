@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertically align item</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid red
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container" >
+    <!-- by defualt it is set to stretched -->
+    <!-- after applying align item make the heigth of the box equals to its content -->
+
+    <div class="row align-items-start" style="height: 500px;">
+        <div class="col-3 green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus hic minus eaque ad repudiandae.</div>
+        <div class="col-5 pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit sequi, porro accusamus id quidem!</div>
+        <div class="col-2 green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur voluptas sint repellat? Debitis quis ratione commodi!</div>
+        <div class="col-4 blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ad quidem laborum eligendi dicta?</div>
+        <div class="col-5 orange">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+        <div class="col-2 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+    </div>
+</div> <br><br>
+    <!-- end is just opposite to start -->
+    <div class="row align-items-lg-end" style="height: 500px;">
+        <div class="col-3 green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus hic minus eaque ad repudiandae.</div>
+        <div class="col-5 pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit sequi, porro accusamus id quidem!</div>
+        <div class="col-2 green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur voluptas sint repellat? Debitis quis ratione commodi!</div>
+        <div class="col-4 blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ad quidem laborum eligendi dicta?</div>
+        <div class="col-5 orange">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+        <div class="col-2 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+    </div>
+</div> <br><br>
+    <!-- end is just opposite -->
+    <div class="row align-items-lg-center" style="height: 500px;">
+        <div class="col-3 green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus hic minus eaque ad repudiandae.</div>
+        <div class="col-5 pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit sequi, porro accusamus id quidem!</div>
+        <div class="col-2 green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur voluptas sint repellat? Debitis quis ratione commodi!</div>
+        <div class="col-4 blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ad quidem laborum eligendi dicta?</div>
+        <div class="col-5 orange">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+        <div class="col-2 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+    </div>
+</div> <br><br>
+    <!-- sare first line (base line) se asign hojaygi. -->
+    <div class="row align-items-lg-baseline" style="height: 500px;">
+        <div class="col-3 green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus hic minus eaque ad repudiandae.</div>
+        <div class="col-5 pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit sequi, porro accusamus id quidem!</div>
+        <div class="col-2 green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur voluptas sint repellat? Debitis quis ratione commodi!</div>
+        <div class="col-4 blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ad quidem laborum eligendi dicta?</div>
+        <div class="col-5 orange">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+        <div class="col-2 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium. Blanditiis nam magnam ea?</div>
+    </div>
+</div> <br><br>
+</body>
+</html>

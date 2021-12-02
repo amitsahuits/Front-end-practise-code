@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+</head>
+<body>
+    <script>
+        let id = Symbol("Hellow");
+        let id1 = Symbol("Hellow")
+
+        console.log(typeof id);
+
+        //even these are same still it will give 'false' , because symbol makes things unique
+        console.log(id === id1);  //false
+
+        //this way we can print the value of symbol
+        console.log(id.description);
+
+        
+        let age = Symbol();
+
+        
+        
+    </script>
+</body>
+</html>

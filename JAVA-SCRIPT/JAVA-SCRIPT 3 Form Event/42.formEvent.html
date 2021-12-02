@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+</head>
+<body>
+    
+<!-- here we are discussing the onfocus , onblur and oninput functions -->
+<!-- onfocus :- is used to highlight the input box when we click inside to write something we can set its background color -->
+<!-- onblur :-is used as reverse of onfocus -->
+<!-- oninput :- is used to get the value of input box this function is triggred when user write something -->
+
+
+    <form action="#" onsubmit="submitfunction()">
+        <label for="">Name</label> <input type="text" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)"  onchange="changefunction(this)" onselect="selectfunction()" oninvalid="alert('please enter name first')" required > <br><br>
+        
+        <label for="">Class</label> <input type="text" id="Class" onfocus="focusFunction(this)" onblur="blurFunction(this)"  onchange="changefunction(this)"> <br><br>
+         
+        <label for="" >Country :</label> 
+        <select id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            <option value="">India</option>
+            <option value="">Pakistan</option>
+            <option value="">Bangladesh</option>
+            <option value="">Sri Lanka</option>
+            <option value="">Nepal</option>
+        </select>
+
+        <input type="submit" value="submit" id="sub">
+
+    </form> <br>
+    <div id="test" style="border: 1px solid red"></div>
+    <div id="test2" style="border: 1px solid rgb(0, 255, 21)"></div>
+
+    <div class="showonscreen" ></div>
+
+    <script src="42.Form Event.js"></script>
+</body>
+</html>

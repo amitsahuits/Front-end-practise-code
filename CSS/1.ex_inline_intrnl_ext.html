@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css tutorial</title>
+    <link rel="stylesheet" href="1.inline_internal_ext.css">
+
+    <style>
+        h3 {
+            color: gainsboro;
+            background-color: rgb(122, 24, 192);
+        }
+
+        h3 {
+            color: rgb(213, 230, 142);
+            background-color: rgb(160, 36, 56);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- this is inline css, and css give it more priority than internal and external css  -->
+    <h2 style="color:green;">this is inline css</h3>
+        <h2 style="background-color:green;">this is inline css</h2>
+
+        <h3>this is internal css IMP-> {isne grainsboro background-color or indigo color isliye nahi diye kyuki humne badme fir se h3 internal css use ki hai with different color <br> <strong style="color: black;"> OR JO V BAD MAI HOTA HAI WO PEHLE WALEKO OVERWRITE KAR DETA <br> agar mai chahta hun ki maine jo pehle likha tha usko prefrence mile to mai "!important" usme laga skta hoon  </strong> </h3>
+
+            <p>this is external css </p>
+
+</body>
+
+</html>

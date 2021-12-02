@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch method</title>
+</head>
+<body>
+    <script>
+        fetch("13.ajaxreadme.txt")
+        .then((response)=>{
+            //this 'then' function also return promise, so to handle that we need one more 'then() function'
+            return response.text();
+        })
+        .then((returnedRespondText)=>{
+            //returnedRespondText is user define.
+            document.write(returnedRespondText);
+        });
+
+        document.write("<br><br>")
+
+        // we can make this even more short
+        fetch("https://jsonplaceholder.typicode.com/users")
+        // .then((response)=> response.json())
+        // .then((returnedRespondText)=> console.log(returnedRespondText))
+        // .catch((error)=> console.log(error));
+        
+        // we are changing then returned variable name so we can get error in then function, then catch function will going to be executed.
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response=> response.json())
+        .then(returnedRespondText=> console.log(returnedRespondText1111))
+        .catch((error)=> console.log("Can't fetch data"));
+
+        //how to show the fetched data into our documnent.
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => response.json())
+        .then((returnedRespondText) => {
+            console.log(returnedRespondText)
+        
+            for(var x in returnedRespondText){
+                document.write(`${returnedRespondText[x].name} - ${returnedRespondText[x].email}<br><hr> `)
+            }
+            
+
+        })
+        .catch((error) => console.log(error));
+    </script>
+</body>
+</html>

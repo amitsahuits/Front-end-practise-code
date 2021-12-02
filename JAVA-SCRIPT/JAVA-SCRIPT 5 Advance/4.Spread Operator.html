@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+<body>
+    <script>
+
+// usage-1
+         function adding(name, lastname, ...args) { //here name and args is user given name and it can be understood by javascript.
+
+                let sum = 0;
+                for (let i in args) {
+                    sum += args[i];
+                }
+                document.write(`${name} ${lastname} : `);
+                document.write(sum + "<br>");
+            }
+
+            arr = [10,20,30,40]
+            adding("Amit", "sahu",...arr);
+
+            document.write("<br> <br>")
+// ---------------------------------------------------------------------------------------
+// usage - 2
+// we can also concat arry in this way using spread operator.
+            var arr1 = [10,20,30,40];
+            var arr2 = [50,60];
+            var arr3 = [5,...arr2,...arr1,65];
+
+            document.write(arr3);
+            console.log(arr3);
+// ----------------------------------------------------------------------------------------
+// usage - 3
+// we can merge objects as well
+
+            var obj1 = {
+                name:"Amit"
+            };
+
+            var obj2 = {
+                age : 25
+            }
+            var obj3 = {...obj1,...obj2};
+
+            console.log(obj3);
+    </script>
+</body>
+</html>

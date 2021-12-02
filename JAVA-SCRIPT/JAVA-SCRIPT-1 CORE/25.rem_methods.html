@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remaining methods of array</title>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <script>
+        //-------------------------is array-----------------
+
+        var a = ["aman","rahul","shyam","babu bhaiya"];
+        
+        var b = Array.isArray(a);
+        document.write('is this array? -->' + b + '<br><br>');
+
+    // ---------------------indexOf & lastindexOf------------
+        //to find the index of items of an array
+        //indexOf("search item",start)
+
+        var a = ["rahul","aman","shyam","babu bhaiya","aman"];
+        var b = a.indexOf("shyam");
+        document.write(' using indexOF -->' + b + '<br><br>');
+
+        var c = a.indexOf("shyam",3); //it will start finding after index value 3 but shyam is before three so when it not found any value it will return '-1'
+        document.write(' using indexOF -->' + c + '<br><br>');
+
+        //lastindexOf is same as indexOf the only difference is tht, it starts searching from last.
+        var c = a.lastIndexOf("babu bhaiya");
+        var d = a.lastIndexOf("aman",3);
+        document.write(' using lastindexOF -->' + c + '<br><br>');
+        document.write(' using lastindexOF -->' + d + '<br><br>');
+
+
+        // ---------------------includes function------------
+        // it search the given string or integer value and provide only true and false if available
+        // !important :-  it is case sensitive.
+        
+        var a = ["rahul","aman","shyam","babu bhaiya","aman"];
+        var c = a.includes("babu bhaiya");
+        document.write(' using includes -->' + c + '<br><br>');
+
+        //------------------------some function----------------
+        // if we want to check our own made condition then we will some function
+        var ages = [10,14,15,18,17,20];
+        var b = ages.some(checkAdult);
+        document.write(' using some -->' + b + '<br><br>');
+        
+        function checkAdult(age){
+            return age >= 18;    //if value greater than the 18 is available in our array then it will return true 
+        }
+
+        //-------------------------every function---------------
+        //according to this every value should be greater than the 18
+        //each value should clear the defined test otherwise it will surely return false
+        var ages = [10,14,15,18,17,20];
+        var b = ages.every(checkAdult);
+        document.write(' using every -->' + b + '<br><br>');
+        
+        function checkAdult(age){
+            return age >= 18;    //if value greater than the 18 is available in our array then it will return true 
+        }
+
+
+
+//-------------------------find & findindex function---------------
+// find take function as a parameter and check the given value in a condition and if any value pass the test then it will stop there and return the value.
+
+        var ages = [10,14,15,19,17,20];
+        var b = ages.find(checkAdult);
+        document.write(' using find() -->' + b + '<br><br>');
+        
+        function checkAdult(age){
+            return age >= 18;    //if value greater than the 18 is available in our array then it will return true 
+        }
+
+//findindex
+//it just return the index 
+
+    var ages = [10,14,15,19,17,20];
+        var b = ages.findIndex(checkAdult);
+        document.write(' using findindex() -->' + b + '<br><br>');
+        
+        function checkAdult(age){
+            return age >= 18;    //if value greater than the 18 is available in our array then it will return true 
+        }
+
+
+//-------------------------filter function---------------
+//in above method is checking our given condition and returning true or the perticular value and gets stop where our condtion get satisfied,
+// if we want check and get all satisfied value according to given condition in a sepearate array then we shoud use filter
+    var ages = [10,24,15,19,17,20];
+        
+        var b = ages.filter(checkAdult); //filter always return array of satisfied value.
+        document.write(' using filter() -->' + b + '<br><br>');
+        
+        function checkAdult(age){
+            return age >= 18;    //if value greater than the 18 is available in our array then it will return true 
+        }
+
+
+
+//-------------------------tostring function---------------
+//it make the item of array a list and then we can not apply any array function into it.
+var a = ["aman","shyam","babu bhaiya"];
+        
+        a.toString();
+
+        document.write(' using tostring -->' + a + '<br><br>');
+
+
+//-------------------------fill function-------------------
+//it just fill the array with provided value
+
+var a = ["aman","shyam","babu bhaiya"];
+a.fill("ram")
+document.write('using fill() -->' + a + '<br><br>');
+
+    </script>
+</body>
+</html>

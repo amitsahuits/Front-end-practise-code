@@ -1,0 +1,156 @@
+/* all the section will get the equal padding from bottom and top */
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section h2.section-head{
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.section h2.section-head::after{
+    background:#c0392b;
+    content: "";
+    display: block;
+    width: 130px;
+    height: 3px;
+            /* y , x-axis */
+    margin: 20px auto;
+}
+
+#header{
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+#menu{
+    list-style: none;
+    margin: 0px; padding: 0px;
+}
+
+#menu li { 
+    display: inline-block;
+}
+
+#menu li a{
+    color:#fff;
+    padding: 15px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+#menu li a:hover{
+    background-color: #c0392b;
+}
+/* OR */
+/* a:hover{
+    background-color: #c0392b;
+} */
+
+#logo{
+    /* to make font size small */
+    font-size: 2rem;
+    /* to adjust our logo */
+    margin-top: 5px;
+}
+
+#banner{                                             /* x and y axis*/          
+    background-image: url('../images/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-title{
+    padding-top: 5rem;
+}
+
+.banner-title h1{
+    background: rgb(255, 255, 255,0.8);
+}
+
+/* woh p tag jisme maine lead class lagayi hui hai */
+.banner-title p.lead{
+    color: #fff;
+    background: rgba(231, 76, 60,0.7);
+    padding: 10px;
+}
+
+/* ------------ service box-------------------- */
+
+.service-box{
+    text-align: center;
+}
+
+.service-box i.fas{
+    color: #c0392b;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+/* ------------- testimonial------------------ */
+
+#testimonials{
+    background: url(../images/dark.jpg) no-repeat;
+    background-size: cover;
+    /* padding: 40px 0px; */
+    color: #fff;
+
+}
+
+.testimonial img{
+    border-radius: 50%;
+    margin-top: 10px;
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* ---------------news------------------- */
+.news-post img{
+    height: 140px; width: 90%;
+    margin-bottom: 10px;
+}
+
+.news-post h3{
+    font-size: 1.35rem;
+}
+
+.news-post h3 a{
+    color:#e74c3c
+}
+
+.post-date{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+/* font awesome calender css */
+.post-date:before{
+    content: "\f271";
+    font-family: Font Awesome 5 Pro;
+    margin-right: 7px;
+}
+
+/* anchor jispe readmore class hai */
+a.readmore{
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+a.readmore:after{
+    content: "\f101";
+    font-family: Font Awesome 5 Pro;
+    margin-left: 7px;
+    text-decoration: none;
+}
+
+/* footer----------------- */
+#footer-sidebar{
+    color:#fff;
+    background: #34495e;
+    padding: 20px 0;
+}
+/* footer----------------- */

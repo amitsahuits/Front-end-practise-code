@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await</title>
+</head>
+<body>
+    <!-- async function is come to reduce the complexty of promise -->
+    <!-- it works same but it is more easier to understand -->
+    <script>
+        async function test() {
+            return "hellow"
+        }
+        // the async function return and for that we will take variable to handle that return
+        test().then((result) => {
+            console.log(result);
+        });
+
+
+
+        let test1 = async () =>{
+            return "hellow this is another way"
+        }
+        // the async function return and for that we will take variable to handle that return
+        test1().then((result) => {
+            console.log(result);
+        });
+
+        // in arrow function we don't need to write return
+        let test2 = async () => "hellow this is third way";
+        
+        // the async function return and for that we will take variable to handle that return
+        test2().then((result) => {
+            console.log(result);
+        });
+
+        // Await --------------------------------------
+        // as a name state , it make the code inside function wait till the remailning code where it is called is executing .
+        async function test_await(){
+            console.log("2: Message");
+            await console.log("3: Message");
+            console.log("4: Message");
+        }
+
+        // numbering is according to message that will print first.
+        console.log("1: Message");
+        test_await();
+        console.log("5 : Message");
+
+
+    </script>
+</body>
+</html>

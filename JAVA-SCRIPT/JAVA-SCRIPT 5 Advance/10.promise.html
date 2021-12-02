@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        // var complete = false;
+
+// these resolve and reject can be any name.
+
+        // var prom = new Promise(function (resolve, reject) {
+        //     if(complete){
+        //         resolve("I am successful");
+        //     }
+        //     else{
+        //         reject("I am failed");
+        //     }
+        // });
+
+        // console.log(prom);
+
+
+        // we can also do this inside function
+        // function prom(complete) {
+        //     return new Promise(function(yess, noo) {
+        //         if(complete){
+        //             yess("I am successfull.");
+        //         }
+        //         else{
+        //             noo("i am failed");
+        //         }
+        //     })
+        // }
+
+        // var onfulfilment = (result) => {
+        //     console.log(result);
+        // }
+
+        // var onRejection = (error) => {
+        //     console.log(error);
+        // }
+
+        //IMPORTANR:- //if true then yess will execute and pass its value to the 'onfulfilment' then this will serve as argument for 'onfulfilment function'
+            //onfulfilment and onRejection can be any name
+        // prom(true).then(onfulfilment);
+        // prom(false).catch(onRejection)
+                //OR
+        //prom(true).then(onfulfilment).catch(onRejection);
+
+
+
+
+        //or
+        //when we use ajax request then some time we need user to wait till fetching for this we'll use setTimeout function
+
+        function prom(complete) {
+                return new Promise(function (yess, noo) {
+                    console.log("Fetching data, please wait.")
+
+                    setTimeout(() =>{
+
+                        if (complete) {
+                            yess("I am successfull.");
+                        }
+                        else {
+                            noo("i am failed");
+                        }
+
+                    }, 3000)
+                    
+                })
+            }
+
+            //if do not want to make onfulfilment and onRejection function separately then we can define inside here as well
+            prom(true
+            ).then((result) => {console.log(result);  }).catch((result) => { console.log(result); })
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float,clear and height and width</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    .float-start
+    .float-end
+    .float-none
+    .float-sm-start
+    .float-sm-end
+    .float-sm-none
+    .float-md-start
+    .float-md-end
+    .float-md-none
+    .float-lg-start
+    .float-lg-end
+    .float-lg-none
+    .float-xl-start
+    .float-xl-end
+    .float-xl-none
+    .float-xxl-start
+    .float-xxl-end
+    .float-xxl-none
+    -->
+
+    <div class="container">
+        <div class="w-25 green float-start">
+            <h2>Div A</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+        <div class="w-25 blue float-end">
+            <h2>Div B</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+    </div>
+    <!--so many because the below container overlapping the above container -->
+    <br><br><br><br><br>
+    
+    <!-- we have problem in above example to fix this problem we use clearfix class in the parent div -->
+    <div class="container clearfix">
+        <div class="w-25 green float-lg-start">
+            <h2>Div A</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+        <div class="w-50 blue float-lg-end">
+            <h2>Div B</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+    </div> <br>
+
+    <!--if we want to swap left and right floated div. -->
+    <div class="container clearfix">
+        <!-- this means :- jab tak lg se badi hai to wo rigth mai rahe or jese hi lg se niche jaye to end mai ho jae jab tak ki smalll screen nahi aajati -->
+        <div class="w-25 green float-lg-start float-sm-end">
+            <h2>Div A</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+        <div class="w-25 blue float-lg-end float-sm-start">
+            <h2>Div B</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+    </div> <br>
+
+    <!--if we want float to be worked only when screen gets small -->
+    <div class="container clearfix">
+        <!-- this means :- jab tak lg se badi hai to wo none rahe or jese hi lg se niche jaye to float work karne lage jab tak smalll screen nahi aajati -->
+        <div class="w-25 green float-lg-none float-sm-start">
+            <h2>Div A</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+        <div class="w-25 blue float-lg-none float-sm-end">
+            <h2>Div B</h2>
+            <p>Lorem labore libero quos praesentium error corrupti repellendus!</p>
+        </div>
+    </div> <br>
+
+
+</body>
+</html>

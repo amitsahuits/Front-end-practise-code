@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in java script</title>
+</head>
+<body>
+    <script>
+        //it store data just like the array , but its functionality is more than the array
+        //in object you can store the array or functions. *important*
+
+        //defining object 
+        var a = { 
+            fname : 'amit',
+            lname : 'sahu',
+            age : 25,
+            email : 'amitsahuits@gmail.com',
+
+            //defining array
+            favmovie : ['dhoom', 'sholay', 'bahubali'], 
+            
+            //defining function inside object
+            salary : function(){
+                return 26000;
+            },
+
+            //another function
+            //here this function is like self function of python
+            fullname : function() { 
+                return this.fname + " " + this.lname;
+            },
+
+            //object inside object
+            address : {
+                city : 'sagar',
+                state : 'madhya pradesh',
+                country : 'india'
+            }
+        }
+
+        //we can't print directly 
+        //document.write(a) //if we try to print directly surely we going to get [object object] as output.
+
+        //correct way
+        //we can directly print in a console but not at screen
+        console.log(a);
+        //printing on screen
+        document.write(a.fname + "<br>");
+        document.write(a.email + "<br>");
+
+        document.write(a.favmovie + "<br>"); //printing array
+        document.write(a.favmovie[0] + "<br>"); //printing array with index
+        
+        document.write(a.salary() + "<br>"); //printing function
+        document.write(a.fullname() + "<br>");
+
+        document.write(a.address.city + "<br>"); //printing object inside object elements
+        document.write(a.address.state + "<br>"); //printing object inside object elements
+    </script>
+</body>
+</html>

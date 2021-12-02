@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //function declaration.
+        function hello(){
+            document.write("hellow Everybody");
+            document.write("<br>");
+        }
+
+        //calling a function
+        hello();
+        hello();
+        hello();
+        
+//---------------------------------------------------------------------------------------------------------------------------------------------
+
+        //function with parameters
+        function YourName(fname = "New User",lname = " temprory"){ //if user forget to give parameter then it will show underfine, so be are defing default value so that if user forget to value then it will show this default values.
+            document.write("hello " + fname + " " + lname + "<br>");
+        }
+
+        //calling by passing parameter
+        fname = prompt("enter your first Name"); 
+        lname = prompt("enter your second Name");
+
+        YourName(fname ); //if we are not passing second parameter then it will automatically shows us the default value
+        YourName(fname,lname);
+
+//----------------------------------------------------------------------------------------------------------------------------------------------
+
+        //addition function
+        function sum(a,b){
+            return a + b ;
+        }
+
+        document.write(sum(20.4,15));
+//----------------------------------------------------------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

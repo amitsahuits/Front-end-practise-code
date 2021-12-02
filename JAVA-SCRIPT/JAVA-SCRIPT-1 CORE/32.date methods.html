@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date method</title>
+</head>     
+<body>
+    
+    <script>
+        //making now a object of date() so that we access date functionality
+        var now = new Date();
+        document.write(now)
+        document.write("<br>")
+
+        //above we are not getting date and time in user readable form 
+        // to get the redable form we should use getDate()
+
+        //getDate
+        document.write('getDate -->' + now.getDate()) 
+        document.write("<br>")
+        
+        //getFullYear
+        document.write('getFullYear -->' + now.getFullYear()) 
+        document.write("<br>")
+
+        //getMonth
+        document.write('getMonth -->' + now.getMonth()) 
+        document.write("<br>")
+
+        //getDay
+        document.write('getDay -->' + now.getDay())  //it will provide numeric value for monday it will provide 1 and tuesday 2 and so on.
+        document.write("<br>")
+
+        //similar for time function
+
+        //** past dates
+
+        // if we want to put perticular year date, month, and time then we can easily do that.
+        //first define the object
+        var now = new Date('january 5 2010');
+        document.write('getDate user define -->' + now.getDate()) 
+        document.write("<br>")
+        var now = new Date('january 5 2010'); //#0 --> january Month
+        document.write('getMonth user define -->' + now.getMonth()) 
+        document.write("<br>")
+        
+        //** future dates
+
+        //if we want to put the future date and want to see the day of that future date 
+        var now = new Date();
+        now.setFullYear(2022)
+        document.write('setFullYear user define -->' + now); 
+        document.write("<br>")
+
+        now.setMonth(2)
+        document.write('setMonth user define -->' + now);  //0->jan, 1->feb, 2->march.
+        document.write("<br>")
+
+        now.setHours(2)
+        document.write('setHours user define -->' + now);  
+        document.write("<br>")
+    </script>
+</body>     
+</html>

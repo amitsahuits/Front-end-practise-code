@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        *{
+            margin: 5px;
+        }
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid red    
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+        .cyan {
+            background-color: cyan;
+        }
+        .blue {
+            background-color: lightblue;
+        }
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+</head>
+<body>
+    <!-- we must write this property into the row class -->
+    <!-- as we know justify-content:center , around , between. -->
+    <!-- in bootstrap if we give height to any "row" then its inside boxes automatically get streched -->
+    <!-- if we want to make them perfect align or if we want to make the proper space between two rows -->
+    <!-- to see its application we must provide the excess heigth of the row -->
+
+    
+    <!-- align item start -->
+    <div class="container">
+        <div class="row " style="height: 400px;">
+            <div class="col-4 blue">
+                WITHOUT ALIGN-content IF WE SET HEIGHT THEN BOXES WILL BE STRETCHED LIKE THIS UPTO THE HEIGHT.
+            </div>
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-4 blue">
+                align-content-start class
+            </div>
+            <div class="col-3 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div>  <br><br>
+    <div class="container">
+        <div class="row align-content-start" style="height: 400px;">
+            <div class="col-4 blue">
+                align-content-start will make the box size upto the content size
+            </div>
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-4 blue">
+                align-content-start class
+            </div>
+            <div class="col-3 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div>  <br><br>
+    <div class="container">
+        <div class="row align-content-lg-center" style="height: 400px;">
+            <div class="col-4 blue">
+                align-content-center will make the box size upto the content size
+            </div>
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-4 blue">
+                align-content-start class
+            </div>
+            <div class="col-3 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div>  <br><br>
+    <div class="container">
+        <div class="row align-content-end" style="height: 400px;">
+            <div class="col-4 blue">
+                align-content-end will make the box size upto the content size
+            </div>
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-4 blue">
+                align-content-start class
+            </div>
+            <div class="col-3 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div>  <br><br>
+    <div class="container">
+        <div class="row align-content-lg-between" style="height: 400px;">
+            <div class="col-4 blue">
+                align-content-between will make the box size upto the content size
+            </div>
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-4 blue">
+                align-content-start class
+            </div>
+            <div class="col-3 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div>  <br><br>
+    <div class="container">
+        <div class="row align-content-lg-around" style="height: 400px;">
+            <div class="col-4 blue">
+                align-content-around will make the box size upto the content size
+            </div>
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-4 blue">
+                align-content-start class
+            </div>
+            <div class="col-3 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div>  <br><br>
+</body>
+</html>

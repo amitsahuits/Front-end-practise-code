@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templates string</title>
+</head>
+<body>
+    <script>
+        // old way to concatinate the strings
+        let user = "Amit sahu";
+        let marks = 220;
+        document.write("hellow " + user + " welcome to advance javascript <br>"); 
+        
+        //in this method of concatinating , the code is getting complex.
+
+        //now the same thing we can do with our template string
+        // template string
+        document.write(`Hellow ${user} your marks is "${marks}" welcome to advance javascript <br>`);
+
+        //another way to use
+
+        let hellow = `Hellow ${user} you got ${marks} <br>`
+        document.write(hellow);
+
+        // another way to use
+        let firstname = 'Amit';
+        let lastname = 'sahu';
+        
+        function fullname(firstname,lastname) {
+            return `${firstname} ${lastname}` //returning name after concatinating
+        }
+        let myname = `hey brother ${fullname(firstname,lastname)}`; //here calling and will same into let hellow
+
+        //now displaying the name
+        document.write(myname);
+    </script>
+</body>
+</html>

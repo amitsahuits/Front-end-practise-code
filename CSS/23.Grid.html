@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid introduction</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 90%;
+            height: 70vh;
+
+            /* defining display grid */
+            display: grid;
+
+            /* IN this three parameter means that we are dividing the grid into three part and it will automatically fit the number of boxes in that row or coloum */
+
+            /* defining columns  1st-clm 2-clm 3-clm */
+            grid-template-columns: 100px 1fr 300px;
+                              /* OR */
+            /* if i want to repeat for next n number of row some width then i use repeat */
+            grid-template-columns: repeat(3,2fr);
+
+            /* defining rows 1st-row 2-rw 3-rw*/
+            grid-template-rows: 10px 1fr 0.5fr ;
+
+            /* at above we define only upto three rows and column but if i want to define remaining column and rows then i required to use grid-auto-rows or column */
+            grid-auto-rows: 70px;
+
+            /* by default this is set to row , means if we add some extra box it will automatically goes to new row but after applying this , the new boxes will go to the new column */
+            grid-auto-flow: column;
+            /* grid-auto-columns: 100px; defining autoflow width */
+            
+            /* defining spaces x-axis and y-axis  */
+            grid-gap: 1rem 6rem;
+
+        }
+        .item{
+            border: 2px solid black;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- div.item{this is Item-$}*10 -->
+        <div class="item">this is Item-1</div>
+        <div class="item">this is Item-2</div>
+        <div class="item">this is Item-3</div>
+        <div class="item">this is Item-4</div>
+        <div class="item">this is Item-5</div>
+        <div class="item">this is Item-6</div>
+        <div class="item">this is Item-7</div>
+        <div class="item">this is Item-8</div>
+        <div class="item">this is Item-9</div>
+        <div class="item">this is Item-10</div>
+        <div class="item">this is Item-11</div>
+        <div class="item">this is Item-12</div>
+        <div class="item">this is Item-13</div>
+        <div class="item">this is Item-14</div>
+        <div class="item">this is Item-15</div>
+        <div class="item">this is Item-16</div>
+    </div>
+</body>
+</html>

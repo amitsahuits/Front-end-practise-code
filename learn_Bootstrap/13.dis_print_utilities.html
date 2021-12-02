@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display utility</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+</head>
+<body>
+    <!-- this property is used when user want to print our html page  -->
+    <!-- then at that moment we want to hide some content -->
+    <!-- and opposite to that , sometimes we required to show something at preview , before printing that page -->
+    <!-- for this purspose we will use these bootstrap propeties -->
+
+    <div class="container">
+        <div class="row">
+            <!-- it will be shown when we use to print this page -->
+            <!-- means it property is set to block when we print it -->
+            <!-- use ctrl+p to see -->
+            <div class="col-md-3 d-none d-print-block blue">
+                <h2>Col A</h2>
+                <p>it will be shown when we use to print this page</p>
+            </div>
+            <div class="col-md-3 green">
+                <h2>Col B</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 pink">
+                <h2>Col C</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 cyan">
+                <h2>Col D</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div> <br><br>
+    
+    <!-- opposite to above -->
+    <div class="container">
+        <div class="row">
+            <!-- it will be hidden when we use to print this page -->
+            <!-- means it property is set to hide when we print it -->
+            <!-- use ctrl+p to see -->
+            <div class="col-md-3 d-print-none blue">
+                <h2>Col A</h2>
+                <p>it will be hidden when we use to print this page</p>
+            </div>
+            <div class="col-md-3 green">
+                <h2>Col B</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 pink">
+                <h2>Col C</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 cyan">
+                <h2>Col D</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div> <br><br>
+</body>
+</html>

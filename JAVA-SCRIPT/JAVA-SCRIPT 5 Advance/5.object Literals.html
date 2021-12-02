@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object literal</title>
+</head>
+<body>
+    <!-- first use of object literal -->
+    <h2>see console</h2>
+    <script>
+        
+        let name = "AMit"
+        let course = "bachelor of engineering"
+        
+        var obj = {
+            // we don't need to assign like this (name = name;) to get the previous assign value
+            // we can simply write name like this and it will automatically assign value by itself.
+            name,
+            course,
+        };
+        
+        console.log(obj); 
+        //we will get this in chrome console.
+        // Object
+        //course: "bachelor of engineering"
+        //name: "AMit"
+        
+
+
+        // another use of object literals ------------------------------------------------------------
+
+        let n = "name"
+        let b = "branch"
+        let obj1 = {
+            // this [n] will become the name variable
+            [n] : "Amit sahu",
+                    // we will get this in our console
+                        // name = Amit sahu
+
+            // in the place of b , we will get branch and it will concatined then with field
+            [b + "field"] : "Computer Science",
+
+            // previously we define funciton like this inside object
+            detail : function(){
+                return `${this.name} is student of ${this.branchfield}`
+            },
+
+            // now we can define function like this.
+            mydetail(){
+                return `new way to define function : ${this.name} is student of ${this.branchfield}`
+            },
+            // how to define function having space
+            // we should place function name inside quotes.
+            'detail show'(){
+                return `new way to define function : ${this.name} is student of ${this.branchfield}`
+            }
+        };
+
+        console.log(obj1);
+        // we can call attributes perticularly also like this way...
+        console.log(obj.name);
+        console.log(obj1.branchfield)
+
+        // calling function
+        console.log(obj1.detail())
+
+        console.log(obj1.mydetail())
+        // OR
+        console.log(obj1['mydetail']());
+        // OR
+        console.log(obj1['detail show']());
+
+
+
+        // 3rd usage of object literals --------------------------------------------------
+        function student(fname,lname,study) {
+            let fullname = fname + " " + lname;
+
+            // when we return in this way, it always then return the object.
+            return {fullname , study};
+        }
+        let fname = "Amit"
+        let lname = "Sahu"
+        let study = "B.E"
+
+        // it will return the object.
+        // console.log(student(fname,lname,field));
+                // OR
+        let s = student(fname, lname, study);
+        console.log(s);
+        // calling the returned object attribute
+        console.log(s.fullname)
+        console.log(s.study)
+
+    </script>
+</body>
+</html>

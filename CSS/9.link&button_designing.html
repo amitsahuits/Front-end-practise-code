@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and more designing</title>
+    These hover,active,visited,link are our pseudo selectors
+    <style>
+        .container{
+            border: 2px solid darkblue;
+            background-color: rgb(138, 202, 202);
+            margin: 32px;
+            padding: 32px;
+        }
+        .btn{ /*by taking button or links under class we can customize it as we normally do*/ 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgb(208, 123, 216);
+            color: darkblue;
+            padding:5px;
+            margin:5px;
+            border:none; /* it will remove default borders of button and link */
+            border-radius: 19px;
+        }
+        a{
+            text-decoration:none; /*it removes the underline which comes default below the link */
+        }
+        a:link { /*if the link is unvisited then the link will show style which we will define in this if we do not use it then it will take that color which we have define above in a{} */
+            color:darkgrey;
+        }
+        a:hover{ /*it will change whatever you define in this when you put cursor over it*/
+            color:red;
+            background-color: rgb(116, 91, 139);
+            border-radius: 2px;
+            padding:15px;
+        }
+        a:visited{
+            color:black;
+            background-color: orange;
+        }
+        a:active{
+            color:green;
+            background-color:black;
+            border:2px solid rgb(217, 240, 9);
+        }
+        
+        /* similarly we can do all these same for our buttons too for eg:-*/
+        /* .btn:hover{
+            background-color:white;
+            color:black;
+
+            i am commenting it because our '<a>' link also comes under .btn class and if we define anything here then it will overwrite those properties which we have written above
+            but by using 'id' we can specify this padding speciality to our button also
+            see below:- 
+        } */
+        #mybtn:hover{
+            padding:15px;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum necessitatibus accusamus ut alias ullam eius corrupti magnam unde, et deserunt? Vero numquam saepe rem facere voluptate explicabo fuga velit, ex dolorem amet quam molestiae.</p>
+        <a class="btn" href="http://facebook.com" >Read more</a>
+        <button class="btn" id="mybtn">Contact us</button>
+        
+    </div>
+</body>
+</html>

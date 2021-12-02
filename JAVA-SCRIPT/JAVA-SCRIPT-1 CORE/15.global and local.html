@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = "amit sahu";
+        
+        
+        function hellow() {
+            //declaring local variable
+            b = "i am local variable"
+            
+            document.write(a + "- global variable inside function" + "<br>" );
+            document.write(b + "- local variable inside function" + "<br>");
+            
+        }
+        
+        hellow();
+
+        document.write(a + " -global variable outside of a function" + "<br>");
+        
+        //try to printing local variable outside funtion, definately going to get error.
+        document.write(b);
+    </script>
+</body>
+</html>

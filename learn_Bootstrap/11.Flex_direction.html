@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align_self</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+</head>
+<body>
+    <!-- flex-row-reverse-->
+    <!-- it will maek the order reverse -->
+    <!-- but after the size break point they will get to the previous places so to keep them into this place better to not use breakpoints. -->
+    <!-- we can use breakpoint like -->
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-md-3 yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col-md-3 red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col-md-3 green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+    <!-- flex-column -->
+    <div class="container">
+        <div class="row flex-column">
+            <div class="col-md-3 yellow">
+               <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col-md-3 red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col-md-3 green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit, voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus culpa.
+            </div>
+        </div>
+    </div> <br>
+    <!-- to reverse those column -->
+    <div class="container">
+        <div class="row flex-column-reverse">
+            <div class="col-md-3 yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col-md-3 red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col-md-3 green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit, voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus culpa.
+            </div>
+        </div>
+    </div> <br>
+    <!-- flex-wrap: nothing special in this class because it will move div which is taking space more than the 12div   -->
+    <!-- it just function like the normal col classes -->
+    <div class="container">
+        <div class="row flex-wrap">
+            <div class="col-md-3 yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col-md-3 red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col-md-3 green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col-md-3 orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+    <!-- flex-wrap-reverse -->
+    <div class="container">
+        <div class="row flex-wrap-reverse">
+            <div class="col-md-3 yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col-md-3 red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col-md-3 green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col-md-3 orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+    
+<!-- flex nowrap is just make that extra div overflow  -->
+<!--this has no error , i am commenting this because it is creating problem to see other in inspect view  -->
+    <!-- <div class="container">
+        <div class="row flex-nowrap">
+            <div class="col-md-3 yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col-md-3 red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col-md-3 green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col-md-3 orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br> -->
+
+
+    <!-- classes which works without breakpoint classes -->
+    <!--flex-column  -->
+    <div class="container">
+        <div class="row flex-column">
+            <div class="col yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col pink">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+
+    <!-- flex-row-reverse -->
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col pink">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+
+    <!-- flex-fill-->
+    <!-- it works only when we are using simple col class without breakpoint and width -->
+    <div class="container">
+        <div class="row ">
+            <div class="col yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col flex-fill green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col pink">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+    <!-- flex-fill another example. -->
+    <div class="container">
+        <div class="row ">
+            <div class="col yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col flex-fill red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col  green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col pink">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+    <!-- flex-fill another example. -->
+    <div class="container">
+        <div class="row ">
+            <div class="col yellow">
+                <h1>col-A</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe soluta quisquam.
+            </div>
+            <div class="col red">
+                <h1>col-B</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate aliquid repellat reiciendis
+                fugiat eligendi officia id, natus ullam, aliquam iure minima nam excepturi facere et alias quos soluta velit.
+            </div>
+            <div class="col  green">
+                <h1>col-C</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga id quas sit iste eaque rem
+                facilis excepturi a at pariatur consequuntur, officia ullam odit quis.
+            </div>
+            <div class="col blue">
+                <h1>col-D</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col flex-fill orange">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+            <div class="col pink">
+                <h1>col-E</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus reprehenderit,
+                voluptate, dicta architecto laborum pariatur perspiciatis molestiae, maxime corrupti quos? Sapiente natus temporibus
+                culpa.
+            </div>
+        </div>
+    </div> <br>
+</body>
+</html>

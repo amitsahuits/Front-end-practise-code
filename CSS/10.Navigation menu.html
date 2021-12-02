@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .navbar {
+
+            background-color: black;
+            border-radius: 33px;
+        }
+
+        
+        .navbar ul {
+
+            overflow: auto;
+            /* The problem with applying float in li tag elements is that it will over flow the backgroud color which we define in its parent nav */
+
+            /* To over come this problem we will use overflow:auto in ul tag*/
+        
+        
+        }
+
+        .navbar li {
+
+            margin: 14px 10px;
+                /* padding v de sakte hai per sirf margin hi se v kam hogya. */
+
+            font-size: 19px;
+
+
+            float: left;
+
+
+            list-style: none;
+                /* this will remove the unordered list circular pointer */
+
+            padding-top: 4px
+                /*jab hume lage ki humare element center per nahi hai to hum ye use kar sakte hai*/
+                /* Ye kam hum wese margin se v kar sakte the jo is mein uper define ki huyi hai*/
+        }
+
+        .navbar li a {
+
+            color: rgb(218, 209, 226);
+        
+            text-decoration: none;
+            /* ye txt decoration isliye diya hai ki jo line ati hai link ke niche wo hat jaye  */
+        
+        }
+
+        .navbar li a:hover{
+            color: red;
+        }
+
+
+        /* to make search bar and costumize it */
+        .search {
+            float: right;
+            padding: 14px 40px;
+        }
+
+        .navbar input {
+            border: 4px solid seagreen;
+            border-radius: 14px;
+            padding: 3px 30px;
+            margin: 0px 43px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+                <!-- jab kuch nhi link deni ho to pound # symbol dediya jata hai -->
+                <div class="search">
+                    <input type="text" name="text" id="search" placeholder="search here!">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

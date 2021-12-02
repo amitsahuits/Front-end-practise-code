@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <button onclick="openwindow()"> open window </button>
+    <button onclick="movewindow()"> move window </button>
+    <script>
+        function openwindow() {
+            //it won't work in other website it will only open its own website in which this code is running.
+            // mywindow = window.open("http://www.yahoobaba.net", "", "widht=500px,height=200px")
+
+            mywindow = window.open("","","width=400px,height=300px");
+            mywindow.document.write("<p> this is our trail page content </p>")
+        }
+
+        //move function is not working we don't know why?
+        function movewindow() {
+            mywindow.move.To(20,40)
+        }
+    </script>
+
+</body>
+
+</html>

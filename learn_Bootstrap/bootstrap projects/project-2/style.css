@@ -1,0 +1,42 @@
+:root{
+    --border: 2px solid black;
+}
+
+*::before,*::after{
+    padding: 0px; margin:0px;
+}
+
+*{
+    padding: 0px; margin:0px;
+}
+
+/* #navbar{
+    position: sticky;
+} */
+
+#menu li{
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+#menu li a{
+    text-decoration: none;
+}
+
+#banner{
+    height: 80vh;
+    background-image: url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#banner-content a{
+    display: flex;
+    justify-content: center;
+}
+
+/* section{
+    margin-top: 24px;
+    margin-bottom: 24px;
+} */

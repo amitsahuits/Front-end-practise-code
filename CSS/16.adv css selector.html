@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo selector</title>
+    <style>
+        input[type='text'] {
+            /*targeting those who have input type text*/
+            margin: 20px;
+            border: 2px solid red;
+            display: block;
+        }
+
+        input[type='submit'] {
+            /*targeting those who have input type submit*/
+            padding: 30px;
+            border: 2px solid blue;
+            display: block;
+            margin: 20px;
+        }
+
+        a[target='_blank'] {
+            /*targeting those who have _self target*/
+            font-size: 45px;
+            color: rgb(155, 161, 69);
+        }
+
+        a[target='_self'] {
+            /*targeting those who have _self target*/
+            font-size: 30px;
+            color: rgb(202, 55, 178);
+        }
+
+        div ul li {
+            font-size: 25px;
+        }
+
+        /* This will apply css for third child */
+        li:nth-child(3) {
+            color: cornflowerblue;
+        }
+
+        /* This will apply css for every second child */
+        li:nth-child(2n+0) {
+            /*imp->0 zero means starts from zero if we define 1 one there then its mean tht from the first element then jump to every second element means after first then it will jump to third*/
+            color: rgb(236, 4, 4);
+        }
+
+        li:nth-child(odd) {
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://google.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

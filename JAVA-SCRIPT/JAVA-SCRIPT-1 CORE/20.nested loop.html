@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    <script>
+        // for(var a=1; a<=10; a++){
+        //     for(b=1;b<=10; b++){
+        //         c = a * b;
+        //         document.write(c + " - ");
+        //     }
+        // document.write("<br>")
+        // }
+
+       
+        for(var m = 1; m <= 5; m++){ //outer loop is to initialize inner loop again
+
+            for(var n = 1; n <= m; n++){
+                document.write(n);
+
+            }
+            
+            document.write('<br>');
+        }
+        document.write('<br>');
+        document.write('<br>');
+
+        for(var m = 1; m <= 5; m++){ //outer loop is to initialize inner loop again
+
+        for(var n = 1; n <= m; n++){
+            document.write(m);
+
+        }
+        document.write("<br>");
+    }
+    </script>
+</body>
+</html>

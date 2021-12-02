@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        //in javascript array can work like a list and contain multiple data type values
+        var ary = [10,'harry','sarah',true,null];
+        
+        document.write("<ul>");
+        for(var a = 0; a<=4; a++){
+                document.write("<li>" + ary[a] + "</li>");
+                }   
+        document.write("</ul>");
+
+
+
+        document.write("<br> <br>");
+
+        //how to assinging new array
+        // var aryy = new array(); //empty paranthesis means we don't hv the idea that how much value it get latter
+        var aryyy = new Array(3); //value 3 means confirming that ,it will latter get the 3 enteries ,but it will not give any error even after you give this more than a three values.
+
+        //assinging values to arry
+        aryyy[0] = 555;
+        aryyy[1] = 'nusrat';
+        aryyy[2] = false;
+
+        
+        document.write("<ul>");
+        for(var b = 0; b<=5; b++){ //some undefine values because ,we're assingning three values and runnign loop five times
+                document.write("<li>" + aryyy[b] + "</li>");
+                }   
+        document.write("</ul>");
+    </script>
+</body>
+</html>

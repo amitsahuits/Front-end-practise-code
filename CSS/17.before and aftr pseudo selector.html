@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEFORE AND AFTER PSUEDO </title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+
+/* if we take <p> to understand before and after. it only print the item we written in content before and after it. thats it nothing special */
+
+        p::before{
+            display: block;
+            content: "Hello"; /*this will be shown*/
+            background: red;
+            color:white;
+        }
+        
+        p::after{
+            display: block;
+            content: "world";
+            background:green;
+            color:white;
+        }
+        p:hover::after{
+            display: block;
+            content: "yoo";
+            background:hotpink;
+            color:white;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- WE MUST USE CONTENT -->
+    <H1>::after and ::before tutorial yahoo baba</H1>
+    <p>learning web desiginig</p>
+</body>
+</html>

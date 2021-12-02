@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <!--here i am trying to place that ajaxreadme.txt text into this paragraph tag with the help of ajax-->
+
+
+    <p id="demo">Here we load data</p>
+    <button onclick="loadData()">Click</button>
+    
+    <script>
+        //this function will gonna execute as soon as we click that button.
+        function loadData(){
+            var xhttp = new XMLHttpRequest();
+
+            //this function will check the state of function again and again(i think inner loop code by javascript is applying)
+            xhttp.onreadystatechange = function(){
+                //then this will check whether we got our response or not
+                if(this.readyState == 4 && this.status == 200){
+                    
+                    document.getElementById("demo").innerHTML = this.responseText;
+                    console.log(this.responseText)
+
+                    // if it give 404 no found error then this will execute
+                } else if (this.readyState == 4 && this.status == 404) {
+
+                    document.getElementById("demo").innerHTML = "File not found";
+                }
+            }
+    
+    
+            // this will text what to do by this method of xhttp object 
+            //'GET' is method is already know , second argument is from where , and third argument is whether process going to aysnc or sync , here true means this ajax code as well as our other code will execute simultaniously.
+
+            // xhttp.open('GET',"13.ajaxreadme.txt",true);
+            xhttp.open('GET',"https://jsonplaceholder.typicode.com/posts",true);
+            //now whatever we request made , it will send.
+            xhttp.send();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <script>
+        // while loop ------------------------------------------------
+        var a = 1;
+        while(a<=5){
+            document.write(a +") You are performing while loop <br>");
+            a = a + 1;
+        }
+
+        document.write("<br> writing ul list using loop:-");
+        var b = 1;
+
+        document.write("<ul>");
+        while(b<=5){
+            document.write("<li>" + b +") You are performing while loop <br> </li>");
+            b = b + 1;
+        }
+        document.write("</ul>");
+
+        
+        //do while loop------------------------------------------------
+        //at first do while loop does not check the condition ,if the condition is false it will enter into the loop ,then second time it will check the condition.
+
+        var c = 1;
+        do{
+            document.write(" you are performing the do while loop <br>");
+            c++;
+        }
+        while(c <= 5)
+            
+        document.write("<br>")
+
+
+        //for loop most used loop -----------------------------------------
+        for(var d =1; d<=5; d++){
+            document.write(" you are performing the for loop <br>");
+        }
+        
+        document.write("<br>") // give space between different loops output
+
+        //for each loop ----------------------------------------------------------
+        //it will run for each value
+        var a = ["sunjay","aman","shashank"]
+        a.forEach(function(value, index){
+            document.write(" you are performing the forEach: " + index + " : " + value + "<br>");
+        });
+
+        document.write("<br>") // give space between different loops output
+                        
+                                //   OR
+
+        a.forEach(myloop) //we can make our function at different place and pass its name in the forEach loop like this it will work same
+
+        function myloop(value,index){
+            document.write(" you are performing the forEach: " + index + " : " + value + "<br>")
+        }
+       
+
+    </script>
+</body>
+</html>

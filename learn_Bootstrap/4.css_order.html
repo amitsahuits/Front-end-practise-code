@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_order</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <!-- first and last ordering -->
+    <div class="container">
+        <div class="row">
+            <div class="col" style="background-color: orange;">col1</div>
+            <div class="col" style="background-color: pink;">col2</div> <!--it will be last after medium screen-->
+            <div class="col" style="background-color: blue;">col3</div> <!--it will be first from the starting-->
+            <div class="col" style="background-color: green;">col4</div>
+        </div>
+    </div> <br><br>
+
+    <!-- any order .order-n class -->
+    <!--IMPORTANT! they will take whatever place you assign to div immediately but they will come to their real place when the display size gets samlller than the md or lg or xl -->
+    <div class="container">
+        <div class="row">
+            <div class="col order-md-3" style="background-color: orange;">col1</div>
+            <div class="col order-md-2" style="background-color: pink;">col2</div> <!--it will be last after medium screen-->
+            <div class="col order-md-1" style="background-color: blue;">col3</div> <!--it will be first from the starting-->
+            <div class="col order-md-0" style="background-color: green;">col4</div>
+        </div>
+    </div> <br><br>
+
+    <!-- real life example of ordering -->
+    <!-- even we are writing the paragraph first still we see it on the right -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 order-md-2" style="background-color: orange;">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit laudantium eum fugit praesentium, ducimus nulla excepturi eveniet nisi animi inventore magnam officia architecto! Dicta commodi, animi quasi ad libero, natus earum est, recusandae vitae quis maxime beatae. Quis necessitatibus culpa voluptatum doloremque aspernatur illum, explicabo voluptatem repellat ab quos reiciendis doloribus numquam sunt! Molestias facilis quod deserunt quia voluptatum laborum ad numquam asperiores quibusdam officia provident esse nulla, ullam voluptates? Impedit, atque soluta? Maiores consequatur nisi eaque iure itaque incidunt earum fugiat ipsa rerum! Officiis repellendus aut sint vero, provident aspernatur porro illo accusamus unde, soluta saepe libero, enim est sit perferendis.</p>
+            </div>
+            <div class="col-md-4 order-md-1" style="background-color: pink;">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">contact us</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+
+</body>
+</html>

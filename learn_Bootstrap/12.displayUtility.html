@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display utility</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+         .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+    <!-- As such, the classes are named using the format:
+    
+    .d-{value} for xs
+    .d-{breakpoint}-{value} for sm, md, lg, xl, and xxl.
+    Where value is one of:
+    
+    none
+    inline
+    inline-block
+    block
+    grid
+    table
+    table-cell
+    table-row
+    flex
+    inline-flex -->
+
+<body>
+     <div class="container">
+         <!-- by defualt it is block so we can make it inline by this class -->
+        <!-- here we are not making any row because inside row ,div become flex -->
+             <div class="p-3 d-md-inline-block blue">
+                 <h2>Col A</h2>
+                 <p>medium screen ane per complete screen lelenge.</p>
+             </div>
+             <div class="p-3 d-md-inline-block green">
+                 <h2>Col A</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             </div>
+            
+     </div> <br><br>
+
+     
+     <!-- d-none will hide the perticular column -->
+     <div class="container">
+            <div class="row">
+                <div class="col-md-3 blue">
+                    <h2>Col A</h2>
+                    <p>medium screen ane per complete screen lelenge.</p>
+                </div>
+                <div class="col-md-3 d-none green">
+                    <h2>Col B</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <!-- if we want to hide it till the large screen then it will shown in smaller than the lg -->
+                <div class="col-md-3 d-lg-none pink">
+                    <h2>Col C</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-3 cyan">
+                    <h2>Col D</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>    
+     </div> <br> <br>
+
+    <!-- if we want to hide the perticular div when screen is seeing by viewer on mobile phone -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 blue">
+                <h2>Col A</h2>
+                <p>medium screen ane per complete screen lelenge.</p>
+            </div>
+            <!-- it means that it will remain block till the small screen , once screen gets small it will be hide itself -->
+            <!-- d-sm-block ki priority jyda hai because ye bad mai likha hai ,but iski property sirf small(sm) screen tak hi apply rahegi -->
+            <!-- uske baad wo d-none property apply kar dega or div hide hojayga.-->
+            <div class="col-md-3 d-none d-sm-block green">
+                <h2>Col B</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 pink">
+                <h2>Col C</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 cyan">
+                <h2>Col D</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div> <br> <br>
+
+    <!-- if we want to do opposite to above , if we want to hide in big screen and show the div when screen gets small -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 blue">
+                <h2>Col A</h2>
+                <p>medium screen ane per complete screen lelenge.</p>
+            </div>
+            <div class="col-md-3 d-block d-sm-none green">
+                <h2>Col B</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 pink">
+                <h2>Col C</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-3 cyan">
+                <h2>Col D</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!-- here we can also use flex as we use in our normal div -->
+    <!-- here below i am not providing any row so it is not become flex and remain simple div that always have display block -->
+    <!-- we can apply normal flex box properties by making normal div -->
+    <div class="container">
+        <div class="d-flex" style="border:3px dotted brown">
+            <div class="pink">Col A</div>
+            <div class="red">Col B</div>
+            <div class="blue">Col C</div>
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="d-flex flex-column" style="border:3px dotted brown">
+            <div class="pink">Col A</div>
+            <div class="red">Col B</div>
+            <div class="blue">Col C</div>
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="d-flex flex-column-reverse" style="border:3px dotted brown">
+            <div class="pink">Col A</div>
+            <div class="red">Col B</div>
+            <div class="blue">Col C</div>
+        </div>
+    </div><br>
+
+    <!-- we can also can give the order to our divs by ourselves -->
+    <div class="container">
+        <div class="d-flex" style="border:3px dotted brown">
+            <div class="order-3 pink">Col A customize order</div>
+            <div class="order-1 red">Col B</div>
+            <div class="order-2 blue">Col C</div>
+        </div>
+    </div><br>
+</body>
+</html>

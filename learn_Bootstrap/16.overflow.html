@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float,clear and height and width</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- first without any overflow property just to show that this is overflowing -->
+    <div class="container">
+        <div class="row">
+            <div class="w-50 pink" style="height: 160px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem hic recusandae
+                sit nam doloribus perferendis, iste impedit quasi nesciunt, odit vel praesentium quo repudiandae officia
+                odio dolore aliquid pariatur architecto ut tenetur. Cumque rem deserunt hic officiis doloremque id
+                exercitationem dicta possimus quis laboriosam, reiciendis modi quibusdam molestiae libero placeat, in
+                dignissimos fuga ad debitis, necessitatibus eum. Ea molestias, est nisi eligendi iste minus sit magni
+                itaque dolore! Corporis voluptatum officiis facilis, error similique iure velit eaque dolorum veritatis,
+                odit ipsa. Voluptate ipsam optio perspiciatis pariatur sequi vel blanditiis labore repellat expedita qui
+                neque, eum cumque fugit voluptatum doloribus dolorum voluptas iusto soluta, repellendus ducimus, impedit
+                esse corporis rem inventore. Illo alias quam et maiores doloribus, quaerat odit recusandae beatae
+                voluptatem vero deleniti excepturi repellat, tempore praesentium dolorum similique porro! Dolorum sed
+                fuga blanditiis provident nemo aliquam temporibus. Iure sed aut ab culpa quasi quis molestiae dicta
+                voluptatibus ipsa nostrum!</div>
+        </div>
+    </div> <br><br> <br><br><br><br><br><hr>
+
+    <!-- when we apply overflow-auto then it makes the scroll bar for the overflow content  -->
+    <div class="container">
+        <div class="row">
+            <div class="overflow-auto w-50 pink" style="height: 160px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem hic recusandae
+                sit nam doloribus perferendis, iste impedit quasi nesciunt, odit vel praesentium quo repudiandae officia
+                odio dolore aliquid pariatur architecto ut tenetur. Cumque rem deserunt hic officiis doloremque id
+                exercitationem dicta possimus quis laboriosam, reiciendis modi quibusdam molestiae libero placeat, in
+                dignissimos fuga ad debitis, necessitatibus eum. Ea molestias, est nisi eligendi iste minus sit magni
+                itaque dolore! Corporis voluptatum officiis facilis, error similique iure velit eaque dolorum veritatis,
+                odit ipsa. Voluptate ipsam optio perspiciatis pariatur sequi vel blanditiis labore repellat expedita qui
+                neque, eum cumque fugit voluptatum doloribus dolorum voluptas iusto soluta, repellendus ducimus, impedit
+                esse corporis rem inventore. Illo alias quam et maiores doloribus, quaerat odit recusandae beatae
+                voluptatem vero deleniti excepturi repellat, tempore praesentium dolorum similique porro! Dolorum sed
+                fuga blanditiis provident nemo aliquam temporibus. Iure sed aut ab culpa quasi quis molestiae dicta
+                voluptatibus ipsa nostrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, assumenda! Quos similique voluptatibus dolore, cum sit tempora cupiditate alias officiis eligendi! Sint facere voluptatibus aperiam illum obcaecati dolorum, perspiciatis, omnis, expedita quidem quas ex. Eveniet deleniti totam, ab cum repellendus exercitationem architecto quidem, quaerat nostrum minima esse qui magni recusandae mollitia. Ratione quisquam blanditiis, quae mollitia saepe odio, atque nihil ullam vero cum quasi vel facilis ipsum quibusdam! Nisi aliquid sequi saepe, consectetur nihil aperiam molestias eaque reprehenderit odio quasi labore praesentium blanditiis error fuga incidunt ad doloremque ducimus sunt amet atque enim laborum fugiat sed! Blanditiis delectus illo illum?!</div>
+        </div>
+    </div> <br><br><hr>
+
+    <!-- if in case we want to hide the overflow content or text -->
+    <div class="container">
+        <div class="row">
+            <div class="overflow-hidden w-50 pink" style="height: 160px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem hic recusandae
+                sit nam doloribus perferendis, iste impedit quasi nesciunt, odit vel praesentium quo repudiandae officia
+                odio dolore aliquid pariatur architecto ut tenetur. Cumque rem deserunt hic officiis doloremque id
+                exercitationem dicta possimus quis laboriosam, reiciendis modi quibusdam molestiae libero placeat, in
+                dignissimos fuga ad debitis, necessitatibus eum. Ea molestias, est nisi eligendi iste minus sit magni
+                itaque dolore! Corporis voluptatum officiis facilis, error similique iure velit eaque dolorum veritatis,
+                odit ipsa. Voluptate ipsam optio perspiciatis pariatur sequi vel blanditiis labore repellat expedita qui
+                neque, eum cumque fugit voluptatum doloribus dolorum voluptas iusto soluta, repellendus ducimus, impedit
+                esse corporis rem inventore. Illo alias quam et maiores doloribus, quaerat odit recusandae beatae
+                voluptatem vero deleniti excepturi repellat, tempore praesentium dolorum similique porro! Dolorum sed
+                fuga blanditiis provident nemo aliquam temporibus. Iure sed aut ab culpa quasi quis molestiae dicta
+                voluptatibus ipsa nostrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, assumenda! Quos similique voluptatibus dolore, cum sit tempora cupiditate alias officiis eligendi! Sint facere voluptatibus aperiam illum obcaecati dolorum, perspiciatis, omnis, expedita quidem quas ex. Eveniet deleniti totam, ab cum repellendus exercitationem architecto quidem, quaerat nostrum minima esse qui magni recusandae mollitia. Ratione quisquam blanditiis, quae mollitia saepe odio, atque nihil ullam vero cum quasi vel facilis ipsum quibusdam! Nisi aliquid sequi saepe, consectetur nihil aperiam molestias eaque reprehenderit odio quasi labore praesentium blanditiis error fuga incidunt ad doloremque ducimus sunt amet atque enim laborum fugiat sed! Blanditiis delectus illo illum?!</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+            background: url('img4');
+            background-repeat: no-repeat;
+
+        }
+        .container{
+            height:900px;
+            /* width:fit-content; */
+            background: url('img3.jpeg') no-repeat;
+            background-size: cover;
+        }
+
+        .secondcontainer{
+            display: inline-flex; /*display block hogi agar to kese niche wali uske baju mai ayigi*/
+            align-items: center;
+            justify-content: center;
+            height: 900px;
+            width: 50%;
+            background: url(img2.jpg);
+            background-size: cover;
+            
+        }
+
+        .thirdcontainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            height: 900px;
+            width: 50%;
+            background: url(img4.jpg);
+            background-size: cover;
+        }
+
+        header ul{
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+
+        header ul li {
+            display: inline-flex; /*bcoz they're block element to ek ke niche ek lane ke liye*/
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .navbar{
+            color: white;
+        }
+
+        section {
+            /* border: 2px solid blanchedalmond; */
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {display: flex;
+            color: black;
+            padding: 0px;
+            margin: 0px;
+            font-size: 60px;
+        }
+
+        .para {
+            display: flex; 
+            /* padding dene se side mai unneccessary white block arahe the */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="item">Home</li>
+                    <li class="item">About</li>
+                    <li class="item">Service</li>
+                    <li class="item">Help</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Helow World</h1>
+            <p class='para'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nesciunt expedita quasi iusto
+                aut dignissimos
+                quam dolores nihil quae fuga in, asperiores ratione necessitatibus reprehenderit accusamus corporis
+                facere
+                fugit saepe! Accusantium, exercitationem necessitatibus vel enim minus distinctio totam minima sit modi
+                sint
+                praesentium voluptatem aliquid!</p>
+        </section>        
+    </div>
+    <div class="combo">    
+        <div class="secondcontainer">
+            <h1>this is h1 of container2</h1>
+        </div>
+        <div class="thirdcontainer">
+            <h1>This is h1 ofthird container</h1>
+        </div>
+    </div>
+</body>
+
+</html>

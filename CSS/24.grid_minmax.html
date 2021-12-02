@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template area grid</title>
+    <style>
+        /* the main work of min , max and minmax function to adjust itself according to the inner txt or content. 
+        it automaticalyy adjusts its heigth if we define in grid-row
+        it automaticalyy adjusts its width if we define in grid-column */
+
+        .container{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr ;
+            
+            grid-template-rows:40px max-content min-content;
+             /*even we're providing the heigth of row just small still it will grow its heigth to the content */
+
+            /* grid-template-rows: repeat(3, minmax(50px,max-content));  */
+            /* min 50 or max according to inside content */
+        
+            /* grid-template-rows: repeat(3, minmax(50px,200px)); */
+            /* min 50px and max 200px */
+        }
+
+        #navbar{
+            background-color: royalblue;
+
+        }
+
+        #section{
+            background-color: orange;
+            
+        }
+
+        #aside{
+            background-color: rebeccapurple;
+            
+        }
+
+        #foot{
+            background-color: cyan;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Home About help contact us</div>
+        <div id="section" class="item">item-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolore consequatur tempore veniam consectetur neque, dicta impedit inventore minima facilis excepturi libero omnis exercitationem explicabo enim minus velit debitis, blanditiis officiis esse illo? Veniam aliquid nihil quas hic odio rerum quisquam doloremque! Veritatis quam, consequuntur dolor molestias quae laborum repellendus quis, provident odit, ab optio est doloremque aperiam? Maxime possimus excepturi facilis earum. Molestias beatae doloribus non quia consequuntur incidunt perspiciatis. Tempore molestiae inventore voluptatem laborum totam et, omnis debitis, eveniet labore temporibus, possimus illum spraesentium, provident pariatur ipsum ullam laborum! Impedit facilis et est vitae laudantium nesciunt tenetur.</div>
+
+        <div id="aside" class="item">item-3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut pariatur repellat nostrum? Quae dolorem, neque odit saepe id unde quibusdam blanditiis ea quia earum voluptas ullam excepturi doloremque, sunt e vel. Amet qui illo, nobis eius impedit repellat dolores voluptas optio minima officia unde animi cum quia ratione, ad temporibus corrupti assumenda enim natus a architecto! Vitae obcaecati dolore temporibus perferendis quos culpa at iure mollitia magni fugit.
+        </div>
+
+        <div id="foot" class="item">item-4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, voluptate consequuntur! Aperiam debitis beatae saepe.</div>
+        <!-- <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div>
+        <div class="item">item-15</div> -->
+    </div>
+</body>
+</html>

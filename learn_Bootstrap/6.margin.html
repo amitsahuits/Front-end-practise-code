@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+    
+        .row {
+            border: 5px solid red
+        }
+    
+        .pink {
+            background-color: pink;
+        }
+    
+        .orange {
+            background-color: orange;
+        }
+    
+        .blue {
+            background-color: lightseagreen;
+        }
+    
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- we can center or rigth or left a div then we should use m-atuo, ml-auto(margin-left),mr-auto(margin-right).  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3 mx-auto orange">
+                <p>example of how to center a div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum blanditiis eum, doloremque velit.</p>
+            </div>
+            <div class="blue col-2">
+                <p>example of how to center a div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum blanditiis eum, doloremque velit.</p>
+            </div>
+        </div>
+    </div> <br><br>
+    
+    <!-- margin from the left  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ms-auto orange">
+                e div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum blanditiis eum, doloremque velit.
+            </div>
+            <div class="col-md-4 green">
+                e div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum blanditiis eum, doloremque velit.
+            </div>
+        </div>
+    </div> <br><br>
+
+<!-- margin from the right -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 me-md-auto orange">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, eius voluptatem ratione sapiente soluta id maxime quasi modi quisquam iste, quis explicabo eligendi!
+        </div>
+        <div class="col-md-4 mr-auto green">
+            e div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum
+                blanditiis eum, doloremque velit.
+        </div>
+    </div>
+</div> <br><br>
+
+<div class="container">
+
+    <!-- !important it will center the div in which we applied the m-auto and shift everything aside --> 
+   <div class="row">
+        <div class="col-md-3 mr-auto orange">
+            <p>example of how to center a div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum blanditiis eum, doloremque velit.</p>
+        </div>
+        <div class="col-md-4 orange">
+            <p>example of how to center a div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum blanditiis eum, doloremque velit.</p>
+        </div>
+    </div>
+
+</div><br><br>
+    
+
+<!-- margin auto means appplying same margin on both side  -->
+<!-- but we can also give the distance by us 1 0.25rem-->
+    
+<div class="container">
+    <div class="row">
+    
+        <div class="col-md-2 ms-md-5 orange"> 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, eius voluptatem ratione sapiente
+            soluta id maxime quasi modi quisquam iste, quis explicabo eligendi!
+        </div>
+        
+        <!-- margin top -->
+        <div class="col-md-2 mt-4 green"> 
+            e div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum
+            blanditiis eum, doloremque velit.
+        </div>
+        <!-- margin bottom -->
+        <div class="col-md-2 mb-3 pink"> 
+            e div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum
+            blanditiis eum, doloremque velit.
+        </div>
+        <!-- margin from all the side -->
+        <div class="col-md-2 m-lg-4 pink"> 
+            e div Lorem ipsum olore impedit dolor eius necessitatibus corporis, aspernatur officiis omnis itaque harum
+            blanditiis eum, doloremque velit.
+        </div>
+    </div>
+</div> 
+
+</body>
+</html>

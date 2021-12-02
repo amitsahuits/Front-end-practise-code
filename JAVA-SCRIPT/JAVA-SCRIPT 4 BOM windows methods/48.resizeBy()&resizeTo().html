@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resizeBy() and resizeTo()</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open window</button>
+    <button onclick="resizeWindow()">ResizeTo window</button>
+    <button onclick="resizeWindow()">ResizeBy window</button>
+    <script>
+
+    //ResizeTo 
+    // this will make the window of that size which we have give
+    // currently not working these property properly , this properties might be updated
+        var myWindow;
+        function openWindow() {
+                // var window = window.open(url, windowName, [windowFeatures]);
+            myWindow = window.open("","windowname","resizable, scrollbars, status")
+            myWindow.document.write("<p> This is myWindow. </p>");
+        }
+
+        function resizeWindow() {
+                //it takes two argument ,first height and next is width
+                // window.resizeTo(width, height)
+            myWindow.resizeTo(200,200);
+        }
+
+
+        //ResizeBy()
+        //this will add the provided height and width to the predefine height and width
+         var myWindow;
+            function openWindow() {
+                // var window = window.open(url, windowName, [windowFeatures]);
+                myWindow = window.open("", "windowname", "resizable, scrollbars, status")
+                myWindow.document.write("<p> This is myWindow. </p>");
+            }
+
+            function resizeWindow() {
+                //it takes two argument ,first height and next is width
+                // window.resizeTo(width, height)
+                myWindow.resizeBy(500, 500);
+            }
+    </script>
+</body>
+</html>

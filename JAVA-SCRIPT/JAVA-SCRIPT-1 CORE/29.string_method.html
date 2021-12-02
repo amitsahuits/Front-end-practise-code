@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <h1>This all are the output of the string functions</h1>
+    <script>
+        //****************length
+        document.write('<br>')
+
+        var str = "javascript is a good language";
+        var a = str.length;
+
+        document.write(a);
+
+        document.write('<br>')
+        //**************** toLowerCase();
+        // it make the captial leter into lowercas
+        var str = "JAvaSRipt is A gOod Language";
+        var a = str.toLowerCase();
+
+        document.write('<br>' + a + '<br>');
+
+
+        //**************** toUpperCase();
+        // it make the captial leter into lowercas
+        var str = "JAvaSRipt is A gOod Language";
+        var a = str.toUpperCase();
+
+        document.write('<br>' + a + '<br>');
+
+
+        //*******************includes function
+        // it search the given string or integer value and provide only true if available else false.
+        // !important :-  it is case sensitive.
+        var str = "JAvaSRipt is A gOod Language";
+        var a = str.includes("ipt");
+        document.write('<br> using includes -->' + a + '<br>') 
+
+
+        //*******************startsWith
+        //it match the given string from very start
+        //it is case sensitive
+        var str = "javaScript is a good Language";
+        var a = str.startsWith("java");
+        document.write('<br> using startsWith -->' + a + '<br>')
+
+        //*******************endsWith is opposite
+        //it starts matching from very last.
+
+
+        //*******************search('wordtosearch in a string')
+        //search return index position if it matches the same string as we mention in our search function
+        var str = "javaScript is a good Language";
+        var a = str.search("va");
+        document.write('<br> using search() -->' + a + '<br>')
+
+
+        //**important**
+        //******************match()*******************
+        //it search the given sub string and return array of a number of same string as many time it is available in our mainstring.
+        var str = "javaScript is a good Language";
+        var a = str.match(/a/g); //g means globally
+        document.write('<br> using match() -->' + a + '<br>');
+
+
+        //indexOf and lastIndexOf is same as in array. #check array file to get clearity.
+
+
+        //*****************replace*******************
+        //it takes two parameter, first para is to find and second parameter for replace that word or string
+        // it replace the first occurance of the given word
+        var str = "javaScript is a good is Language";
+        var a = str.replace("is" , "are"); 
+        document.write('<br> using replace() -->' + a + '<br>');
+
+        //if we want to change all occurance then we will use the regular expresssion
+        var a = str.replace(/is/g, "are"); //g means globally(means usme ese jitne v hai wo sabhi ko dhundega.)
+        document.write('<br> using replace() -->' + a + '<br>');
+        
+
+        //******************* trim() *******************
+        //to remove extra space in the form and the alert box
+        var str = "           java Script           ";
+        // alert(str);  i am commenting it so that in our next example it will not occurs
+        var a = str.trim(); 
+        // alert(a);
+
+
+        //******************* charAt *******************
+        //it return the character which is present in the given position.
+        var str = "javaScript is a good is Language";
+        var a = str.charAt(4); 
+        document.write('<br> using charAt() -->' + a + '<br>');
+
+
+        //************** charCodeAt() & fromCharCode()******************
+        // they work same ,both play with skii value of character
+        
+        //charCodeAt()
+        //return the skii value of a perticular value
+        var str = "javaScript is a good is Language";
+        var a = str.charCodeAt(5); //got #99 because at 5 index S is present and skii value of 'S' is 99.  
+        document.write('<br> using charCodeAt() -->' + a + '<br>');
+
+        //fromCharCode 
+        //it provide the character of given skii value
+        var a = String.fromCharCode(65); //got A because 65 is the skii value of A.  
+        document.write('<br> using fromCharCode() -->' + a + '<br>');
+
+        //concat
+        var str = "javaScript is a good is Language";
+        var str2 = " hellow ";
+        var str3 = " world ";
+
+        var a = str.concat(str2,str3); 
+        document.write('<br> using concat() -->' + a + '<br>'); 
+
+        //split
+        var str = "javaScript is a good is Language";
+        var a = str.split(" "); //it split from space
+        document.write('<br> using split() -->' + a + '<br>');
+
+        var a = str.split("i"); //it split from whre i comes
+        document.write('<br> using split() -->' + a + '<br>');
+
+        //repeat()
+        var str = "javaScript is a good is Language";
+        var a = str.repeat(5); 
+        document.write('<br> using repeat() -->' + a + '<br>');
+
+        //slice()
+        // it takes two parameter first start slice and second to which we want to slice
+
+            // what happpen when we pass only one parameter
+            var str = "javaScript is a good is Language";
+            var a = str.slice(3); 
+            document.write('<br> using slice one-parameter() -->' + a + '<br>');
+
+            // what happen when we pass two parameter
+            var str = "javaScript is a good is Language";
+            var a = str.slice(4,13); 
+            document.write('<br> using slice two-para() -->' + a + '<br>');
+
+            // what happen when we pass negative value
+            var str = "javaScript is a good is Language";
+            var a = str.slice(-5); //count from last 
+            document.write('<br> using slice-negative-para() -->' + a + '<br>');
+
+
+        //substr() //little work like slice
+        // *important* it takes the two parameter ,first parameter is the starting index number and the second is the number of string to take out!
+        var str = "javaScript is a good is Language";
+        var a = str.substr(3,5); //means third index number se 5 strings ko lekar ana
+        document.write('<br> using substr() -->' + a + '<br>');
+
+        //substring() // it is same as slice completely but the only differnece is ,it does not count the last.
+        var str = "javaScript is a good is Language";
+        var a = str.substring(3,5); //first para -start , second para -end.
+        document.write('<br> using substring() -->' + a + '<br>'); //#aScr 
+
+
+        // ******************* toString() ********************
+        // it will convert any type into string type
+        var str = 50;
+        var a = str.toString();
+        //see it will not add 50 + 20 because 50 is string now and integer can't be add to string.
+        document.write('<br> using tostring() -->' + a + 20 + '<br>') // #5020
+
+
+
+
+
+    </script>
+
+</body> 
+</html>

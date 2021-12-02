@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        h1{
+            /* so that our txt can be visible because our background color is bblack and text color is also black. */
+            color: whitesmoke;
+        }
+        body{
+            background-color: black;
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+        }
+
+        #box-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* giving box a color */
+            background-color: rgba(98, 47, 156, 0.952);
+
+            /* giving this box height and width */
+            height: 200px;
+            width: 200px;
+
+            /* applying transittion to background color */
+            transition-property: background-color;
+            transition-duration: 1s; /*very important if you dont apply this then transition will be sudden and quick*/
+            
+
+            /* applying transition to height and width so that they will take some time to change and 
+            not change briskly(quickly) */
+            transition-property: height,width;
+
+            /* if we want to apply transition property to all then we define transiiton all  */
+            transition-property: all;
+
+            /*------------- Additional Transition properties ------------------ */
+            
+            /* starting and end mai fast and slow rahega ease in-out-se  */
+            transition-timing-function: ease-in-out; 
+
+            /* if we want to start our transition after perticular hour of time then wee will use this  */
+            transition-delay: 0.5s;
+
+            /*----------------- Transition short hand property in one line ---------------- */
+            /* transition-property:for which item , duration , ease, delay */
+            /* transition-property: all 1s ease-in-out 3s;  i don't know why it is not working*/
+
+
+        }
+
+        #box-1:hover{
+            /* if we hover then it will change it color but it will take changes very quickly
+            and the user won't like it . */
+            /* So to make transition pleasing we use transition property */
+            background-color: turquoise;
+            height: 400px;
+            width: 600px;
+
+            /* SO THAT FONT SIZE ALSO INCREASE */
+            font-size: 30px; /*IMPORTANT-default font size 16px hota hai */
+
+            /* SO THAT BORDER RADIUS ALSO CAN CHANGE  */
+            border-radius: 40px;
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is transition tutorial</h1>
+    <div class="container1">
+        <div id="box-1">
+            box - 1
+        </div>
+
+    <!-- </div>
+    <div class="container2">
+        <h2>
+            box - 2
+        </h2>
+    </div> -->
+</body>
+</html>

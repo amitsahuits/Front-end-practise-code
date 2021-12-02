@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History </title>
+</head>
+<body>
+    <!-- we have the length attribute inside the history object whihc means that hwo many number of pages we have in our backhistory and forward histroy -->
+    <h1>javascript : history object</h1>
+    <button onclick="backfunction()" >back</button>
+    <button onclick="forwardfunction()">forward</button>
+    <button onclick="gopositivefunction()">go for backbard</button>
+    <button onclick="gonegativefunction()">go for forward</button>
+
+    <script>
+        // back() to back page
+        // forward() to the next page that we had opened and get back to current page to see hwo this function is working
+        // go() minus means back and positive value means forward . -2 means two page back , this and the previous one
+        function backfunction() {
+            history.back(); //backfunction call this .back() fucntion
+        }
+        function gopositivefunction() { 
+            history.go(1);  // we can define any number for how many pages we want to go forward
+        }
+        function gonegativefunction() {
+            history.go(-1); //same for negative.
+        }
+
+    </script>
+</body>
+</html>

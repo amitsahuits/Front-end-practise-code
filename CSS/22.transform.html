@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <!-- every thing is overlaping each other please comment and uncomment things to see working of each property  -->
+
+    <style>
+        * {
+            /* to disable default margin and padding */
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /*so that it will take complete height*/
+            width: 100vw;
+            /*so that it will take complete width*/
+            background-color: darksalmon;
+        }
+
+        .box {
+            /*to center text in box*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /*box styling*/
+            width: 300px;
+            height: 300px;
+            color: black;
+            background-color: darkcyan;
+        
+            /*using transition property so that sudden transform can be seen properly*/
+            /* transition: for , duration ,transition-timing-function; */
+            transition: all 1s ease-in-out;
+        
+        }
+
+        /* Transform properties  */
+        .box:hover{
+            transform: rotate(45deg);
+            transform: rotate(360deg);
+
+            /* it will override the rotate , uncomment skew to see the 360 deg transform */
+            transform: skew(30deg);
+
+            /* scale is used to magnify or to make thing bigger ,minus cannot be use to small and minimum value should be 2  */
+            transform: scale(2);
+            /* to make it small use value between 0 and 1 */
+            transform:scale(0.8);
+
+
+
+        /* Translate properties
+        this is use to move container from it position */
+            transform: translateX(120px) ;
+            transform: translateY(120px) ;
+
+            /* if we provide x and y individually then one property will overlap another and the last one will show,
+            for this , it is recomend to use both if needs x and y both direction  */
+                        /* translate(x , y) */
+            transform: translate(80px, 120px);
+        
+        }
+
+
+        
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Transform tutorial css
+        </div>
+    </div>
+
+</body>
+
+</html>

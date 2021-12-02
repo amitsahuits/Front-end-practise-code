@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modify and delete array</title>
+</head>
+<body>
+    <script>
+        var ary =[ 
+                  ["amit",24,"sagar"],
+                  ["abhi",25,"bhopal"],
+                  ["neraj",35,"indore"],
+                  ["goldi",15,"indore"]
+                ]
+
+        //prinitng before changing 
+
+        document.write("<br>")
+
+        for(a = 0; a < ary.length; a++){  //ary length jitna hi  to loop chlna chahiye 
+            for (b = 0; b < ary[0].length; b++){
+            document.write(ary[a][b] + "  ")
+        }
+            document.write("<br>")
+        }
+
+
+
+        //modifying array
+        ary[0][1] = 52;
+
+        //printing after changing
+        document.write("<br>")
+
+        for(a = 0; a < ary.length; a++){  
+            for (b = 0; b < ary[0].length; b++){
+            document.write(ary[a][b] + "  ")
+        }
+            document.write("<br>")
+        }
+
+
+
+        //deleting element
+        delete ary[0][2];
+
+        //printing after changing
+        document.write("<br>")
+
+        for(a = 0; a < ary.length; a++){  
+            for (b = 0; b < ary[0].length; b++){
+            document.write(ary[a][b] + "  ")
+        }
+            document.write("<br>")
+        }
+
+
+    </script>
+</body>
+</html>

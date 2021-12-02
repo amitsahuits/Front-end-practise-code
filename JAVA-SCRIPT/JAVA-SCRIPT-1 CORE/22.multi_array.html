@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multidimensional array</title>
+</head>
+<body>
+    <script>
+        var ary =[ 
+                  ["amit",24,"sagar"],
+                  ["abhi",25,"bhopal"],
+                  ["neraj",35,"indore"],
+                  ["goldi",15,"indore"]
+                ]
+
+            //printing simply multidimension array
+
+            for(a = 0; a < 3; a++){
+                document.write(ary[a] + "<br>")
+            }
+
+            //printing array without comma
+            document.write("<br>")
+
+            for(a = 0; a < 3; a++){
+                for (b = 0; b < 3; b++){
+                document.write(ary[a][b] + "  ")
+            }
+                document.write("<br>")
+            }
+
+            //in above array loop ,we reqiured to define the length, so creating this by using lenght method  of array
+
+            document.write("<br>")
+
+            for(a = 0; a < ary.length; a++){  //ary length jitna hi  to loop chlna chahiye 
+                for (b = 0; b < ary[0].length; b++){ //a[0] isliye quiki jitne eliment ho utne bar chale naki utni bar jitni arrays hai array mai.
+                document.write(ary[a][b] + "  ")
+            }
+                document.write("<br>")
+            }
+
+            //we can also show array in the tabular form
+            document.write("<br>")
+
+            document.write("<table border = '1px'>");
+            for(a = 0; a < ary.length; a++){  //ary length jitna hi  to loop chlna chahiye 
+                
+                document.write("<tr>");
+
+                for (b = 0; b < ary.length; b++){
+
+                    document.write("<td>" + ary[a][b] + "</td>");
+                
+                    }
+                    document.write("</tr>");
+            } 
+                    
+            document.write("</table>")
+
+
+                document.write("<br>")
+
+
+            
+            
+
+
+
+    </script>
+</body>
+</html>

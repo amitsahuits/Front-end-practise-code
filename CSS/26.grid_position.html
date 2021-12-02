@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 700px; 
+            display: grid;
+            grid-gap: 1rem 1rem;
+
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,150px);
+        }
+        .item{
+            font-size: 30px;
+            background-color: lightpink;
+            border: 2px solid black;
+        }
+        #item-1{ /*second row mai and third column*/
+            grid-row-start: 2; 
+            grid-column-start: 3;
+        }
+        #item-2{ /*first row mai , third column per*/
+            grid-row-start: 1;
+            grid-column-start: 3;
+        }
+
+        #item-6{ /*agar same jagah pe position dedi to over karjaynge if position same like this
+        here box-1 overlapped by box 6 because of same position*/
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+
+        /* shorthand from position */
+        #item-4{   /* row / column*/
+            grid-area: 2 / 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">   
+        <div class="item" id = 'item-1'>item-1</div>
+        <div class="item" id = 'item-2'>item-2</div>
+        <div class="item" id = 'item-3'>item-3</div>
+        <div class="item" id = 'item-4'>item-4</div>
+        <div class="item" id = 'item-5'>item-5</div>
+        <div class="item" id = 'item-6'>item-6</div>
+    </div>
+</body>
+</html>

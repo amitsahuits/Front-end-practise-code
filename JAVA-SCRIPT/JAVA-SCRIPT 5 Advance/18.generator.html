@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generators</title>
+</head>
+<body>
+    <script>
+        function *generateit(){
+            console.log('First Message');
+            console.log('Second Message');
+            //yeild will pause here..
+            yield 'Yield No.1';
+            console.log('Third Message');
+            yield 'Yield No.2';
+            yield 'Yield No.3';
+        }
+
+        let g = generateit();
+        console.log(g.next());
+        console.log(g.next.value);
+        console.log(g.next());
+        //done true in console means there is no item left to yeild
+        console.log(g.next());
+
+
+        //printing all value with loop
+        function *generateit(){
+            yield 'Yield No.11'
+            yield 'Yield No.12'
+            yield 'Yield No.13'
+        }
+        var gen = generateit();
+        for(let value of gen){
+            console.log(value);
+        }
+
+
+        //unlimited  generator
+        function* generateit() {
+                var nextNum = 300;
+                    while(true)
+                        yield(nexNum++)
+                    }
+            }
+
+            var gen = generateit();
+            
+    </script>
+</body>
+</html>

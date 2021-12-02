@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods of array</title>
+</head>
+<body>
+    <script>
+        //sort method
+        var a = ["sunjay","aman","jasdeep","kartik"];
+        document.write("array 'a' before sorting--->" + a + "<br> <br>");
+        a.sort();
+        document.write("array 'a' after sorting--->" + a +"<br> <br>");
+
+        //reverse method
+        document.write("array 'a' before reverse method--->" + a + "<br> <br>");
+        a.reverse();
+        document.write("array 'a' after reverse method--->" + a +"<br> <br>");
+
+
+        //----------------pop and push-----------------------------------
+
+        //pop function - It delete the last value of an array.
+        document.write("array 'a' before pop method--->" + a + "<br> <br>");
+        a.pop();
+        document.write("array 'a' after pop method--->" + a +"<br> <br>");
+
+        //push function - It add the value in an array at last.
+        document.write("array 'a' before push method--->" + a + "<br> <br>");
+        a.push("karan");
+        document.write("array 'a' after push method--->" + a +"<br> <br>");
+
+
+        // ------------- shift and unshift : work opposite to pop and push ,it target first unlike push and pop which target last.
+
+        //shift function - It remove the value in an array at 'first'.
+        document.write("array 'a' before shift method--->" + a + "<br> <br>");
+        a.shift();
+        document.write("array 'a' after shift method--->" + a +"<br> <br>");
+
+
+        // unshift function - It add the value in an array at 'first'.
+        document.write("array 'a' before unshift method--->" + a + "<br> <br>");
+        a.unshift("shubh");
+        document.write("array 'a' after unshift method--->" + a +"<br> <br>");
+
+
+
+// -----------------------------concat function & join------------------------
+
+        // concat function - It add the two array into single array 
+        var a = ["sunjay","aman","jasdeep","kartik"];
+
+        var b = a.concat("soumy","vaishali");
+
+        document.write("using concate-->" + b + "<br>");
+
+                        // or
+
+        var a = ["sunjay","aman","jasdeep","kartik"];
+
+        var b = ["aditya","adersh"];
+
+        var m = ["munnu"]
+        //adding multiple array into single array
+        var c = a.concat(b,m);
+
+        document.write("using concate-->" + c + "<br>");    
+        
+        
+        // ---------------> join:- to make elements of array into single string
+        
+        var d = c.join("--- <br>");
+        document.write("<br>" + d + "<br>") 
+
+
+        // -----------------------------slice function & splice------------------------
+        var a = ["sunjay","aman","jasdeep","kartik"];
+        var b = a.slice(1,3); //we can also give negative value
+        document.write("<br> using slice-->" + b + "<br>");
+
+        //first para means place where we have to add in our existing array and second para is to delete the existing item,here zero means i don't want to delete any item.
+        a.splice(2,0,"neha","babu");
+        document.write(a + "<br><br>")
+
+        a.splice(2,3); //means second place se start karo or three values delete karo we can delete all in same way
+        document.write(a + "<br>")
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+<!-- here we define flexbox in display property like inline ,block,inline-block -->
+    <style>
+        .container{
+            height: 500px; /*container border ko define karne ke liye bus*/
+            width: 100%; /*ye bhi*/
+            border: 2px solid black;
+            /* initializing flex */
+            display: flex;
+            
+
+                                
+                                
+                                
+    /* Flex properties for flex container */
+            flex-direction: row; 
+    /* hum agar nahi bhi krte tab bhi by default row hi rehti hai is liye kuch nahi hua */
+            /* flex-direction: column; */
+
+    /* similarly flex-direction: row reverse and column reverse can use; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+                                    
+                                    
+                                    
+                                    
+    /* wrap */
+            /* flex-wrap: wrap; */
+            /* flex-wrap:wrap-reverse; */
+    
+    /* flex direction and flex wrap can set in one line of code by using flex-flow */
+            /* flex-flow: row-reverse wrap; */
+            
+    /* to vertically center content */
+            justify-content: center;
+
+    /* justify-content: other properties; */
+            justify-content: space-between;
+            /* equal space with no space in extremes */
+
+            justify-content: space-evenly;
+            /* equal space between and in extremes */
+
+            justify-content: space-around;
+
+    /* horizontally align-items: center; */
+            align-items: center;
+
+            align-items:baseline;
+            
+            align-items: flex-start; 
+            /* by default hota hai */
+
+            align-items: flex-end;
+            /* niche beth jyga */
+
+            align-items: stretch;
+            /* it is like justify content:center bus ye vertically even space bana leta hai. flex wrap karna hai uncomment 
+            or
+            jo heigt hai container ki usko 100% se hata kar pixel mai krdena
+            or
+            boxes ki heigth v kam krni hai better understanding ke liye
+            */
+
+        }
+        .item{
+            width:200px;
+            height: 120px;
+            background-color: coral;
+            border: 3px solid seagreen;
+            margin: 11px;
+            padding: 4px;
+        }
+
+        /* *************************Flexbox item property*********************** */
+
+/* Higher the order of item it will place in the last ,by default order is zero ,so the without order box will be placed first */
+        /* #item-1{
+            order: 2;
+        }
+        #item-2{
+            order: 1;
+        }        
+        #item-3{
+            order: 4;
+        } */
+
+/* higher the number of flex grow more it will grow compare to other while switching from smaller window to bigger window */
+    /* #item-1{
+        flex-grow:7;
+    }
+    #item-2{
+        flex-grow: 4;
+    }
+    #item-3{
+        flex-grow: 2;
+    } */
+
+/* Flex shrink is opposite to the flex grow wrap ko band krdena warna chota hote hue nahi dikhta */
+    #item-1{
+        flex-grow: 5;
+        flex-shrink: 7;
+    }
+    #item-2{
+        flex-grow:6;
+        flex-shrink: 10;
+    }
+    #item-3{
+        flex: 2 3 344px;
+        /* first >flex grow, second >flex shrink, third >flex basis. */
+    }
+    
+/* flex bases
+        when flex-direction is set to row flex-basis: will control width.
+        when flex-direction is set to column flex-basis: will control heigth.
+ */
+
+    #item-4{
+        align-self: flex-start;
+        align-self: flex-end;
+        align-self: center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox notes</h1>
+    <div class="container">
+        <div class="item" id="item-1">First</div>
+        <div class="item" id="item-2">Second</div>
+        <div class="item" id="item-3">Third</div>
+        <div class="item" id="item-4">Fourth</div>
+        <div class="item" id="item-5">Fifth</div>
+        <div class="item" id="item-6">sixth</div>
+    </div>
+</body>
+</html>

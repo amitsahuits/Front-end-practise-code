@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- if there are multiple promise then we will use -->
+    <!-- as we know there are two posibilty in promise , resolve or reject if promise is resolve 'then()' function is going to execute else catch if rejects -->
+    <!-- in promise all, if all multiple promise is resolve only then promise all is said to be resolve and then is going to execute. -->
+    <!-- but if any of the promises is rejected then promise all is said to be rejected and catch is going to execute -->
+    <!--  -->
+    <script>
+        p1 = new Promise((resolve,reject) => {
+            setTimeout(() => {
+                console.log('The first promise has resolved');
+                resolve(10);
+            },1 * 1000);
+        });
+    
+        p2 = new Promise((resolve,reject) => {
+            setTimeout(() => {
+                console.log('The second promise has resolved');
+                resolve(20);
+            },2 * 1000);
+        });
+
+        p3 = new Promise((resolve,reject) => {
+            setTimeout(() => {
+                console.log('The third promise has resolved');
+                resolve(30);
+            },3 * 1000);
+        });
+
+
+        // Promise.all([p1,p2,p3]).then().catch()
+            //we can make separate function for then and catch 
+
+        var total = 0;
+        Promise.all([p1,p2,p3]).then((result) =>{
+
+            for(var i in result) {total += result[i];}
+
+            console.log(`Results: ${result}`);
+            console.log(`Total: ${total}`);
+        }).catch((error) => {
+            console.log(`Error: ${error}`);
+        })
+
+    </script>
+</body>
+</html>

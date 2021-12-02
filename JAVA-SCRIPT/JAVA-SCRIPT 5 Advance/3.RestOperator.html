@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest operator</title>
+</head>
+<body>
+    <!-- when we process more than three arguments then we use arguments predefined javascript varaible -->
+    <!-- jo v remaining value hoti hai , rest operator usko array bnaleta hai -->
+    <script>
+        function sum(){
+            console.log(arguments);
+
+            let sum = 0;
+            for(let i in arguments){
+                sum += arguments[i];
+            }
+            document.write(sum + "<br>");
+        }
+        sum(20,30,40);
+        document.write('<br><br>')
+        
+        // we use rest operator so that when we get this type of argument, f('hellow',20,30,456,20) and we want to perform some operation on the number
+        function adding(name,lastname, ...args){ //here name and args is user given name and it can be understood by javascript.
+            
+            let sum = 0;
+            for (let i in args) {
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+            document.write(name + lastname);
+        }
+        adding("Amit","sahu",20,30,40,60);
+        
+
+    </script>
+</body>
+</html>

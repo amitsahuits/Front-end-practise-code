@@ -1,0 +1,29 @@
+<!-- window.open(URL,name,specs) -->
+<!-- name :- window name or _blank , _parent ,_self,_top  -->
+<!-- specs :- width , height , Left, Top ...etc-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <button onclick="openwindow()"> open window </button>
+    <button onclick="closewindow()"> close window </button>
+    <script>
+        function openwindow() {
+            // window.open("http://www.yahoobaba.net","_blank"); by default it is blank
+            // window.open("http://www.yahoobaba.net","_parent"); usi window mai khul jayga
+            mywindow = window.open("http://www.yahoobaba.net","","widht=500px,height=200px,left=30px,right=50px");   
+        }
+        //it will close the opened window.
+        function closewindow() {
+              mywindow.close();
+        }
+    </script>
+
+</body>
+</html>

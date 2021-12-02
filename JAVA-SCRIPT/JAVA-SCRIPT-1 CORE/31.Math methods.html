@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math method</title>
+</head>
+<body>
+    <!-- it is important to write math before applying its method -->
+    <script>
+        // some function like ceil , floar and etc only work when we have float value.
+        //ceil method ---> gives upper value.
+        var a = Math.ceil(5.2) //#6 
+        document.write(a)
+        document.write("<br>")
+
+        //floor ---> gives lower value. 
+        var a = Math.floor(5.2) //#5
+        document.write(a)
+        document.write("<br>") 
+
+        //round function
+        //it returns the nearest integer value
+        //if value is above 0.5 then it work like ceil and if value is lower than 0.5 the it will work like floor. 
+        var a = Math.round(5.65) //#6
+        document.write(a)
+        document.write("<br>")
+
+        //trunc
+        // it gives only the integer value it does not show the decimal values.
+        var a = Math.trunc(34.25654) //#34
+        document.write(a)
+        document.write("<br>")
+
+        // Max and min function
+        var a = Math.max(3,56,7,84,87,90) 
+        document.write(a) //#90
+        document.write("<br>")
+
+        //min return the minimum value from the provided value
+        var a = Math.min(3,56,7,84,87,90) 
+        document.write(a) //#3
+        document.write("<br>")
+
+        //sqrt square root
+        var a = Math.sqrt(64) 
+        document.write(a) //#8
+        document.write("<br>")
+
+        //cbrt cubic root
+        var a = Math.cbrt(27) 
+        document.write(a) //#3
+        document.write("<br>")
+
+        
+        //pow(x,y) power first parameter is base and second parameter is exponent
+        var a = Math.pow(2,4) 
+        document.write(a) //#16
+        document.write("<br>")
+
+        //random
+        //by default it provide the random value between zero and one
+        // but we can change it by ourself
+        var a = Math.random();
+        document.write(a) // when we do not provide any parameter it by defualt return us the random value between 0 and 1
+        document.write("<br>")
+
+        //if we want to the number between one to ten or any range then follow this way
+        var a = Math.floor(Math.random() * 10) + 1; 
+        document.write(a) //random 
+        document.write("<br>")
+        //if we want to the number between one to 100 or any range then follow this way
+        var a = Math.floor(Math.random() * 100) + 1; 
+        document.write(a) //random 
+        document.write("<br>")
+
+        //absolute
+        var a = Math.abs(-5.25) 
+        document.write(a) //it returns only number and only return the positive value. 
+        document.write("<br>")
+    </script>
+</body>
+</html>

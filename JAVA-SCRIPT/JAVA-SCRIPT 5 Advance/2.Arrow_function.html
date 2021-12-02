@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+</head>
+<body>
+    <script>
+        // previously there were two ways to define any function
+
+        // first
+        function hellow() {
+            console.log("helloooo")
+        }
+        hellow(); //calling the function
+
+        // second
+        let hey = function() {
+            console.log("heyaaaaaaa")
+        }
+        hey();
+
+        //or
+        let welcome = function(name) {
+            return `hellow & welcome ${name}`
+        }
+        console.log(welcome('Amit sahu'))
+
+//---------------------------------------------------------------------------------
+        //but with the help of arrow function we can write function like this
+        let hello = () => console.log("this is arrow function");
+        hello();
+
+        // or with return
+
+        let Welcome = (name) => {return `this is arrow function and my name is ${name}`}
+        console.log(Welcome('Amit sahu'))
+        // if you have single line of code then u can remove curlie brackets and return keyword
+        Welcome = (name) => `this is arrow function without writing return it is returning and my name is ${name}`
+        console.log(Welcome('Amit sahu'))
+        // if you know that the number of argument will only be one then we can write like this
+        Welcome = name => `this is arrow function if we know that it will only take one argument and my name is ${name}`
+        console.log(Welcome('Amit sahu'))
+    </script>
+</body>
+</html>

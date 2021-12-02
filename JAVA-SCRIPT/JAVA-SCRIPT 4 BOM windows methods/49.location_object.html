@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location object javascript</title>
+</head>
+<body>
+    <h1>javascript location</h1>
+
+    <button onclick="sitefunction()">Click to open google</button>
+    <button onclick="siteassignfunction()">Click to open google through assign function</button>
+    <button onclick="sitereplacefunction()">Click to open google through replace function</button>
+    <button onclick="sitereloadfunction()">Click to reload page</button>
+    <script>
+        
+        function sitefunction() { //we use href to provide link for redirect.
+            location.href = "https://www.google.com"
+        }
+        function sitefunction() { //we use href to provide link for redirect.
+            location.href = "https://www.google.com"
+        }
+        function siteassignfunction() { //it work same like above href.
+            location.assign("https://www.google.com");
+        }
+        //this works same like the assgin but the important difference is we can get the previous page in history after redirecting. 
+        function sitereplacefunction() { //it work same like above href.
+            location.replace("https://www.google.com");
+        }
+
+        //reload
+        function sitereloadfunction() {
+            location.reload();
+        }
+
+    </script>
+</body>
+</html>

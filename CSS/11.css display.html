@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display</title>
+    <style>
+        ul{
+            border:2px solid black;
+        }
+        li{ /*this is a block element but we can make it inline element*/
+            display: inline-block; /*now this will not take total space*/
+            margin: 10px;
+            background-color: blanchedalmond;
+        }
+        span{ /*this is a inline element and take limited space */
+              /*in inline element the width,margin does not work properly 
+              this is one of the reasons we make it "block element" so that
+              our width and other property can work properly*/
+            
+            display: block; /*now width and margin will work properly*/
+
+            box-sizing: border-box; /*this will prevent the padding and margin from changing width and height until the padding and margin do have enough space to shift or adjust itself*/
+            border: 2px solid violet;
+            margin: 5px 5px;
+            padding: 4px 5px;
+            width: 800px;
+            height: 40px;
+
+            display: list-item; /*make it like a list*/
+            list-style-position: inside;
+        }
+
+        a{
+            border:2px solid blue;
+            width:200px;
+            margin:20px 10px;
+            padding:10px 15px;
+
+            /*if we don't want to make inline element into block element and still
+            wants that the padding and margin can also work on inline element as it works on block element then we will use the inline-block*/
+            display:inline-block /*because like span it is also inline elemnt and now width ,paddng and margin will normally work on it without making it block element*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>WELCOME TO AMIT INFO WORLD</h3>
+<ul>
+    <li>home</li>
+    <li>about</li>
+    <li>services</li>
+    <li>help</li>
+</ul>
+
+<span>rock</span>
+<span>paper</span>
+<span>cicsor</span>
+<span>brick</span>
+
+
+
+<a href="#">anchor 1</a>
+<a href="#">anchor 2</a>
+<a href="#">anchor 3</a>
+
+</body>
+
+</html>

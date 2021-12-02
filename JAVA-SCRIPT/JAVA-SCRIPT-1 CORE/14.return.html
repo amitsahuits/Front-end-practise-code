@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funtion with return</title>
+</head>
+<body>
+    <script>
+        function sum(a,b) {
+            var c = a + b;
+            
+            return c
+        }
+
+        //it will print the return value
+        document.write("The sum is : " + sum(2,3) + " <br>");
+
+        //----------------------------------------------------------------------------------------------------------------------------------
+        // Real world example 
+        function sum_of_sub(math,eng,sc) {
+            var sum = math + eng +sc;
+            
+            return sum;
+        }
+
+        function percentage(tt) {
+            var per = "percentage is : " + tt/300 * 100;
+        
+            return per;
+        }
+
+        var total = sum(80,80,75); //calling the sum function and then it will return sum to the total
+
+        document.write(percentage(total)) // calling the percentage function and it will return percentage and document.write print that return value
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object oriented programming</title>
+</head>
+<body>
+    
+    <script>
+        // definig class
+        class hello{
+            // defining methods or properties
+            message(){
+                console.log("hellow Everyone")
+            }
+            sorry(){
+                console.log("sorry Everyone")
+            }
+        }
+
+        // assigning object
+        var a = new hello();
+        // calling method
+        a.message();
+        a.sorry();
+
+
+
+        // There are three types of methods in javascript
+        // 1.constructor method :- just like python , it will class itself automatically when we make object
+        // 2.prototype method :- just like above hellow class define methods, message and sorry.
+                                // in prototype method , we only can call it by making object
+        // 3.static :- here we need to write keyword 'static', this method can be call without making any object.
+
+
+        //defining classs to show how constructor works 
+        class stu{ //we always write constructor to make constructor work, no other name.
+            constructor(){
+                console.log("constructor Function is calling automatically when we creatd an object")
+            }
+        }
+        var student1 = new stu();
+        var student2 = new stu();
+
+
+
+
+
+
+        //another example of using oops
+        class student{
+            constructor(name,fees){
+                this.studentname = name;
+                this.studentfees = fees;
+                console.log("student constructor is running");
+            }
+
+            studentdetails(){
+                console.log("hellow " + this.studentname + " your fees is submitted " + this.studentfees);
+            }
+
+            // static method
+            static RollNo(){
+                // static method is class level method and we can not call this with object refernce
+                // we only can call it with class name
+                console.log("static Function is called");
+            }
+        }
+
+        //creating an object
+        var student1 = new student('Amit',5000);
+        var student2 = new student('shray',4600);
+        
+        // calling the methods of student class
+        student1.studentdetails()
+        
+        // calling static method , it only can be called with class name.
+        student.RollNo()
+
+
+        // creating another class and using inheritance.
+        class exam extends student{
+            constructor(name,fees,seat,room){
+                super(name,fees)
+                this.SeatNo = seat 
+                this.RoomNo = room
+            }
+
+            examdetails(){
+                console.log(`Your room number is ${this.RoomNo} and i have alloted ${this.SeatNo} number`)
+            }
+        }
+
+        var stu1 = new exam('Amit',3000,12, 'class5B');
+        stu1.examdetails()
+        stu1.studentdetails()
+        
+    </script>
+
+</body>
+</html>

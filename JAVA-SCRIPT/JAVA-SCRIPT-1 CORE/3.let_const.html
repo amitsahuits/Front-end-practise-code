@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = "Hellow world ";
+        // in var we can again declare
+        var x = 100.35
+        // in var we can assign value 
+        x='hellow bro! ';
+
+        // let variable
+        let firstname= "let declaring! ";
+        // we can't declare variable again 
+        let firstname= "cannot declare again " ; // error: Uncaught SyntaxError: Identifier 'firstname' has already been declared
+        // but we can assign variable again
+        firstname='but let allow to assign again '
+
+        // const variable 
+        // in const we can't again neither assign nor declare
+        const d = "const declaring"
+        const d = "again can't declare declaring"
+        d = "cannot alllowed to assgn again"
+
+
+        
+
+        document.write(x);
+        document.write(firstname);
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number method</title>
+</head>
+<body>
+    <script>
+        // **************** Number *************
+
+        //convert any string to number 
+        //if we are taking a number into the string form
+        var a = '99'; //if we take in "" between quotes then this is considered as string ,as we already know!
+
+        document.write(a + 10); //#got 9910 not 106 because it concat not add beacause 99 is string
+
+        document.write("<br>")
+
+        var num = Number(a); //this convert string 99 into the integer value , not this can be add to 10
+
+        document.write(num + 10);
+        
+        //**************** parseInt ********************
+        var a = "99 88"
+        var num = parseInt(a); //return the first value that it got
+        document.write("<br> using parseInt -->")
+        document.write(num);
+        
+        var a = '10.33'
+        var num = parseInt(a); //return the first value that it got
+        document.write("<br> using parseInt -->")
+        document.write(num);
+
+        var a = '050 year';
+        var num = parseInt(a); //return the first value that it got
+        document.write("<br> using parseInt -->")
+        document.write(num);
+
+        var a = 'he was 50';
+        var num = parseInt(a); //return NaN(not a number) because it return the first number it gets , in this case it does not found any number.
+        document.write("<br> using parseInt -->")
+        document.write(num);
+
+        //**************** parseFloat ********************
+        //it works same as parse int but the little difference is that ,in this we also get decimal value
+        var a = '050.77 year';
+        var num = parseFloat(a); //return the first value that it got
+        document.write("<br> using parseFloat -->")
+        document.write(num);
+
+        //**************** isFinite **************
+        var a = 100;
+        var num = isFinite(a); //#return true
+        document.write("<br> using isFinite -->")
+        document.write(num);
+
+        var a = 'hellow';
+        var num = Number.isFinite(a); //#return false
+        document.write("<br> using isFinite -->")
+        document.write(num);
+
+        //******************* isInteger *************
+        var a = 10;
+        var num = Number.isInteger(a);
+        document.write("<br> using isInteger -->") //#return true 
+        document.write(num); 
+        
+        var a = 10.55 - 0.5;
+        var num = Number.isInteger(a);
+        document.write("<br> using isInteger -->") //#return false because after substracting the it become float value. and this function check the integer.
+        document.write(num); 
+
+        //*********** toFixed *******************
+        // it the return the number of decimal value that we define
+        var a = 10.56797;
+        var num = a.toFixed(2);
+        document.write("<br> using toFixed -->") //#return two value in the decimal place 
+        
+        document.write(num);
+        var a = 10.5679097;
+        var num = a.toFixed(3);
+        document.write("<br> using toFixed -->") //#return three value after the decimal point 
+        document.write(num);
+
+        //***************** toPrecision(2) ****************
+        //simply return the round about value
+        //means if the after decimal value is above 0.5 the it will work like a cieling other wise it will work like a floar
+        document.write(num);
+        var a = 10.5479097;
+        var num = a.toPrecision(4);
+        document.write("<br> using toPrecision -->") //#return three value after the decimal point 
+        document.write(num);
+
+
+    </script>
+</body>
+</html>

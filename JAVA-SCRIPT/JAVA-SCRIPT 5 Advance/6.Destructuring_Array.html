@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <!-- function destructuring is best for our memory management.we can allot values to the variable whenever we need it. -->
+    <script>
+        var user = ["Amit sahu",25,"Sagar"];
+        // destructuring array , 
+        // all the field in our array will get the variable position wise of array below. 
+        
+        var [name, age, city] = user
+
+        document.write(name + "<br>") 
+        document.write(age + "<br>") 
+        document.write(city + "<br>") 
+
+document.write("<br>")
+
+
+
+        // it will show us undefine if do not get have any positional value
+
+            var user = ["Amit sahu", 25 ];
+
+            // destructuring array , 
+            // all the field in our array will get the variable position wise of array below. 
+            var [name, age, city] = user;
+
+            document.write(name + "<br>")
+            document.write(age + "<br>")
+            document.write(city + "<br>")
+
+document.write("<br>")
+    //Default value... 
+        // in this above it is declaring undefine because we didn't defined any value to it.
+            // in this case ,to avoid undefine, we can set defualt values
+
+                var user = ["Amit sahu", 25];
+
+                // destructuring array , 
+                // all the field in our array will get the variable position wise of array below. 
+                var [name, age, city = "bhopal"] = user;
+
+                document.write(name + "<br>")
+                document.write(age + "<br>")
+                document.write(city + "<br>")
+
+document.write("<br> using nested arary <br>")
+        
+    //Nested array...
+            var user = ["Amit sahu", 25,'sagar',["Male",25000]];
+
+                // destructuring array , 
+                // all the field in our array will get the variable position wise of array below. 
+                var [name, age, city ,[gender,salary]] = user;
+
+                document.write(name + "<br>")
+                document.write(age + "<br>")
+                document.write(city + "<br>")
+                document.write(gender + "<br>")
+                document.write(salary + "<br>")
+
+
+document.write("<br>" + "using rest operator <br>")
+    //Rest operator in destructuring
+        // jo v remaining value hoti hai rest operator usko array bna deta hai
+            var user = ["Amit sahu", 25, 'sagar','Male'];
+
+                // destructuring array , 
+                var [name, ...args] = user;
+
+                document.write(name + "<br>")
+                document.write(args)
+                // see in console , it is array containing all value.
+                console.log(args)
+               
+
+document.write("<br><br> function usage of destructuring <br>")
+            
+    // functional usage of destructuring.
+            function student([name,age = 20,city]) {
+                console.log(name)
+                console.log(age)
+                console.log(city)
+                // or
+                document.write(name + "<br>")
+                document.write(age + "<br>")
+                document.write(city + "<br>")
+            }
+            student(["Amit sahu", 25, 'sagar']);
+    
+document.write("<br><br> Best function usage of destructuring <br>")  
+// when function will be call , then these value will be assign to it ,
+// this method is best for memory .
+            function stu() {
+                return ["Amit sahu",22,"sagar"];
+            }
+            // this function is called there
+            var [fullname,age,city] = stu();
+            document.write(fullname)
+            
+            
+    </script>
+</body>
+</html>

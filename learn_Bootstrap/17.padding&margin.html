@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float,clear and height and width</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--this is example container , i am not applying any css property to it  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="pink">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis hic, quia ullam animi tempore nulla odit. Aliquam delectus, fugit labore tempora omnis consequatur.
+              </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="green">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam debitis ratione velit! Voluptas saepe atque molestias sequi ex illo impedit unde, dicta obcaecati nobis eum!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blue">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi aspernatur molestiae sunt fugit. Officia nam iure reiciendis quos dolore consectetur hic, ducimus non aliquam?
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!-- to remove the padding or divs we can use g-0 (previously it was no-gutters) classes -->
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <div class="pink">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis hic, quia ullam animi tempore nulla odit. Aliquam delectus, fugit labore tempora omnis consequatur.
+              </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="green">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam debitis ratione velit! Voluptas saepe atque molestias sequi ex illo impedit unde, dicta obcaecati nobis eum!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blue">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi aspernatur molestiae sunt fugit. Officia nam iure reiciendis quos dolore consectetur hic, ducimus non aliquam?
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+<!-- to apply padding from y-axis and x-axis -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="pink py-5">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis hic, quia ullam animi tempore nulla odit. Aliquam delectus, fugit labore tempora omnis consequatur.
+              </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="green px-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam debitis ratione velit! Voluptas saepe atque molestias sequi ex illo impedit unde, dicta obcaecati nobis eum!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blue">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi aspernatur molestiae sunt fugit. Officia nam iure reiciendis quos dolore consectetur hic, ducimus non aliquam?
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+<!-- to apply padding from y-axis and x-axis -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="pink my-5">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis hic, quia ullam animi tempore nulla odit. Aliquam delectus, fugit labore tempora omnis consequatur.
+              </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="green mx-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam debitis ratione velit! Voluptas saepe atque molestias sequi ex illo impedit unde, dicta obcaecati nobis eum!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blue my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi aspernatur molestiae sunt fugit. Officia nam iure reiciendis quos dolore consectetur hic, ducimus non aliquam?
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!-- applying break point -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="pink my-lg-5">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis hic, quia ullam animi tempore nulla odit. Aliquam delectus, fugit labore tempora omnis consequatur.
+              </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="green mx-lg-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam debitis ratione velit! Voluptas saepe atque molestias sequi ex illo impedit unde, dicta obcaecati nobis eum!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blue my-lg-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi aspernatur molestiae sunt fugit. Officia nam iure reiciendis quos dolore consectetur hic, ducimus non aliquam?
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!-- applying negative margin -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="pink my-lg-n5">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis hic, quia ullam animi tempore nulla odit. Aliquam delectus, fugit labore tempora omnis consequatur.
+              </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="green mx-lg-n5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam debitis ratione velit! Voluptas saepe atque molestias sequi ex illo impedit unde, dicta obcaecati nobis eum!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blue mt-lg-n3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi aspernatur molestiae sunt fugit. Officia nam iure reiciendis quos dolore consectetur hic, ducimus non aliquam?
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align_self</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        
+        .container {
+            border: 5px solid black;
+        }
+
+        .row {
+            border: 5px solid rgb(255, 0, 170)    
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .blue {
+            background-color: lightseagreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+        .cyan {
+            background-color: cyan;
+        }
+        .blue {
+            background-color: lightblue;
+        }
+        .brown {
+            background-color: rgb(116, 81, 117);
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- the earlier align property is based on the row or container but this property is mainly used for inside column -->
+    <!-- as we did earlier if want to do that with the perticular column of any row.  -->
+    <!-- we will write this inside the column. -->
+    <!-- by default it is streched. -->
+
+    <!-- this is simple not applying any align property here just to compare with other -->
+    <div class="container">
+        <div class="row " style="height: 400px;">
+            <div class="col-4 blue">
+                WITHOUT ALIGN-content IF WE SET HEIGHT THEN BOXES WILL BE STRETCHED LIKE THIS UPTO THE HEIGHT.
+            </div>
+            <!--  i apply here  -->
+            <div class="col-4 brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div> <br><br>
+
+    <div class="container">
+        <div class="row " style="height: 400px;">
+            <div class="col-4 blue">
+                WITH ALIGN-SELF-START IF WE SET HEIGHT THEN BOXES WILL BE STRETCHED LIKE THIS UPTO THE HEIGHT.
+            </div>
+            <!--  i apply here  -->
+            <div class="col-4 align-self-start brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div> <br><br>
+
+    <div class="container">
+        <div class="row " style="height: 400px;">
+            <div class="col-4 blue">
+                WITH ALIGN-SELF-END IF WE SET HEIGHT THEN BOXES WILL BE STRETCHED LIKE THIS UPTO THE HEIGHT.
+            </div>
+            <!--  i apply here  -->
+            <div class="col-4 align-self-md-end brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!--when other boxes are complying to align-item-property, we can align self property to any inner div to make stick at the desirable place.this is the main reason to use the align self. -->
+    <div class="container">
+        <div class="row align-items-md-start" style="height: 400px;">
+            <div class="col-4 blue">
+                when other boxes are complying to align-item-property, we can align self property to any inner div to make stick at the
+                desirable place.this is the main reason to use the align self.
+            </div>
+            <!--  i apply here  -->
+            <div class="col-4 align-self-md-center brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div> <br><br>
+    <div class="container">
+        <div class="row" style="height: 400px;">
+            <div class="col-4 align-self-md-start blue">
+                applying all the three property to all the three div
+            </div>
+            <!--  i apply here  -->
+            <div class="col-4 align-self-md-center brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 align-self-md-end pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!-- there is also a property named align-self-auto ,align self auto follow the same position which is defined by the align-item property in row class.-->
+    <div class="container">
+        <div class="row align-items-md-start" style="height: 400px;">
+            <div class="col-4 align-self-md-end blue">
+                align self auto follow the same position which is defined by the align-item property in row class.
+            </div>
+            <!--  i apply here  -->
+            <div class="col-4 align-self-md-auto brown">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+            <div class="col-3 align-self-md-end pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a esse quasi reiciendis accusamus
+                tenetur accusantium voluptate?
+            </div>
+        </div>
+    </div> <br><br>
+</body>
+</html>

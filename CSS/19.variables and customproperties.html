@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable/custom properties</title>
+
+    <!-- this is notthing , we are taking variables and defining some properties into it then wherever we want that property ,we simply call that variable like var(--danger-color). -->
+    <style>
+        /* Here i will show how to access variable everywhere by defining it inside a root */
+        :root{
+            --container-color: grey;
+            --primary-color: violet;
+            --maxw:500px; /*see container class*/
+        }
+
+
+        .box {
+            font-size: 20px;
+            text-align: center;
+            color:white;
+            width: 200px;
+            height: 200px;
+            background-color: darkblue;
+            border: 2px solid red;
+            margin: 3px 15px;
+        }
+
+/* firstly with box 1 i'll show how locally this variable work within the style container */
+        #box1 {
+            --mybox-color: rgb(80, 42, 60);
+            background-color: var(--mybox-color);
+        }
+/* Now i will showing how it is working for everything like global variable in programming language */
+        #box2{
+            background-color: var(--primary-color);
+        }
+        .container {
+            margin: auto; /*to make our container into center*/
+            max-width: var(--maxw); /*here i am defining what should be the action of maxw variable*/
+            display: flex;
+            background-color: var(--container-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+
+</body>
+
+</html>

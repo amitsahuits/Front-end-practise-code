@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onkeypress="hellow()"> //defining key press event of a keyboard
+
+    <pre>click(onclick)
+        Double click (ondbclick)
+        right click (oncontextmenu)
+        Mouse hover (onmouseenter)
+        Mouse Out (onmouseout)
+        Mouse down(onmousedown)
+        Mouse up(onmouseup)
+        Key Press(onkeypress) //works only on form and body tag
+        Key Up (onkeyup)      //works only on form and body tag
+        load(onload)        //works only on body tag
+        Unload(onunload)    //works only on body tag
+        Resize(onresize)    //works only on body tag
+        Scroll(onscroll)    //works only on body tag
+        ....and many more like this ....
+        
+    </pre>
+
+    <script>
+        function hellow() {
+            
+            alert("hellow everyone");
+        }
+    </script>
+
+    <!-- defining events -->
+    <!-- some event only defined in body tag -->
+    <button onclick="hellow()"> on click</button>
+    <button ondblclick="hellow()"> double click</button>
+    <button oncontextmenu="hellow()"> Right click</button>
+    <button onmouseover="hellow()"> Hover</button>
+    <button onmouseout="hellow()"> on mouse out</button>
+    <button onmousedown="hellow()"> on mouse click/mouse down</button>
+    <button onmouseup="hellow()"> on mouse up</button>
+
+</body>
+</html>

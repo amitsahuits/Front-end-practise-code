@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- uncomment and see to understand better -->
+
+    <style>
+        .container{
+            padding:23px 12px;
+            margin: 23px 12px;
+            display: flex;
+        }
+        .card{
+            margin: 20px;
+            padding: 5px 30px;
+            background-color: cadetblue; 
+            border: 2px solid red;   
+            
+            /* box-shadow: offset-x offset-y color; */
+            box-shadow: 7px 5px rgb(34, 95, 136);
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 7px 5px 10px rgb(34, 95, 136);
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            box-shadow: 7px 5px 10px 10px rgb(34, 95, 136);
+
+            /* if we make this value negative then shadow will form from top not bottom */
+            box-shadow: -7px -5px 10px 10px rgb(34, 95, 136);
+            
+            /* if we want to enter our box shadow inside our box then we use inset */
+            /* box-shadow: inset 12px 15px coral; */
+        }
+
+        h2{ /*same as we are doing with box shadow*/
+
+        /* box-shadow: offset-x offset-y blur-radius color; */
+            text-shadow: 3px 5px 3px saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione animi amet! Repellendus dignissimos atque similique, voluptate soluta earum sequi numquam vitae suscipit voluptatem, ipsa necessitatibus tenetur minus ipsam exercitationem explicabo voluptates ut odio.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione animi amet! Repellendus dignissimos atque similique, voluptate soluta earum sequi numquam vitae suscipit voluptatem, ipsa necessitatibus tenetur minus ipsam exercitationem explicabo voluptates ut odio.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione animi amet! Repellendus dignissimos atque similique, voluptate soluta earum sequi numquam vitae suscipit voluptatem, ipsa necessitatibus tenetur minus ipsam exercitationem explicabo voluptates ut odio.</p>
+        </div>
+    </div>
+</body>
+</html>

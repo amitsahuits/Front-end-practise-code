@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map function in array</title>
+</head>
+<body>
+    <script>
+        //if we want to perform some action on each elements of an array and put the result value into another array then we need to use Map function
+
+    //Example:1
+
+         var ary = [11,2,4,6];
+
+         var b = ary.map(test);
+
+         function test(x) {
+             return x * 10;
+         }
+
+         document.write(b); //got #110,20,40,60
+
+         document.write("<br><br>")
+    // Example:2 Real life example.
+
+         var ary = [{fname : 'yahoo' , lname : 'baba'},
+                    {fname : 'rahul' , lname : 'kumar'},
+                    {fname : 'amit' , lname : 'sahu'}]
+
+        var b = ary.map(test1);
+        document.write(b);
+        
+        function test1(z) {
+            return z.fname + " " + z.lname;
+        }
+
+    </script>
+</body>
+</html>

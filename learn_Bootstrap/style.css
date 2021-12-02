@@ -1,0 +1,12 @@
+.container{
+    border: 2px solid magenta;
+}
+.container-fluid{
+        border: 2px solid magenta;
+}
+.row{
+    border: 2px solid rgb(98, 0, 255);
+}
+.col{
+    border: 2px solid rgb(0, 255, 98);
+}

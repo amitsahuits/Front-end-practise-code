@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+         .container {
+            border: 5px solid black;
+        }
+    
+        .row {
+            border: 5px solid red
+        }
+    
+        .pink {
+            background-color: pink;
+        }
+    
+        .orange {
+            background-color: orange;
+        }
+    
+        .blue {
+            background-color: lightseagreen;
+        }
+    
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- by default 15px padding all around -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 p-5 pink">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo aut perspiciatis hic harum dignissimos maxime omnis tempora suscipit, recusandae, eligendi accusamus sint.
+            </div>
+            <div class="col-3 p-4 green"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo deleniti iure doloremque itaque assumenda eaque harum e
+            </div>
+        </div> <br> <br>
+    <div class="container">
+        <div class="row">
+            <!-- top -->
+            <div class="col-4 pt-4 pink">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo aut perspiciatis hic harum dignissimos maxime omnis tempora suscipit, recusandae, eligendi accusamus sint.
+            </div>
+            <!-- bottom -->
+            <div class="col-3 pb-5 green"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo deleniti iure doloremque itaque assumenda eaque harum e
+            </div>
+            <!-- right or start -->
+            <div class="col-3 ps-5 orange"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo deleniti iure doloremque itaque assumenda eaque harum e
+            </div>
+            <!-- left or end-->
+            <div class="col-3 pe-5 orange"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo deleniti iure doloremque itaque assumenda eaque harum e
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>defining object like python</title>
+</head>
+<body>
+    <script>
+        //defining person object
+        var person = new Object();
+
+        person.firstName = 'Ram';
+        person.lastName = 'kumar';
+        person.age = 23
+
+        console.log(person);
+        document.write(person.age)
+                //OR
+        document.write(person['firstName'] + '<br> <br>')
+
+
+        // ********************* Array of student ******************************
+        var student = [
+            {name : 'ram', age : 15},
+            {name : 'karan' , age : 13},
+            {name : 'rahul' , age : 17}          
+        ];
+        //printing object at console
+        console.log(student);
+
+        document.write("<BR>*****we can't print direclty object******<br>")
+        // printing object at window screen
+        //we can't print object directly
+        for(var a = 0; a< student.length; a++){
+            document.write(student[a] + '<br>' ); 
+        }
+        document.write("<BR>*****but with object property we can print******<br>")
+        //to print object we require to write its property name or attribute name
+        for(var a = 0; a< student.length; a++){
+            document.write(student[a].name + ' age  is :' +student[a].age + '<br>'); 
+        }
+
+        // ****************************** for in loop*********************************
+
+        document.write("<BR>*****for in loop******<br>")
+
+        var obj = { 
+            fname : 'amit',
+            lname : 'sahu',
+            age : 25,
+            email : 'amitsahuits@gmail.com',
+            //defining array
+            favmovie : ['dhoom', 'sholay', 'bahubali']
+            
+            }
+
+            for(var x in obj){
+                document.write(x + ' : ' + obj[x] + "<br>");
+            }
+    </script>
+</body>
+</html>
