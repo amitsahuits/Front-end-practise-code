@@ -11,14 +11,14 @@ newElement.appendChild(newText);
 //we should use the insertAdjacentElement to put our newly created tag into the targetted place.
 
 //uncomment one by one to get clearity....
-var target = document.getElementById("innerid");
+var target = document.getElementById("centerid");
 // target.insertAdjacentElement("beforebegin", newElement);
 
-// target.insertAdjacentElement("afterbegin", newElement);
+target.insertAdjacentElement("afterbegin", newElement);
 
 // target.insertAdjacentElement("beforeend", newElement);
 
-target.insertAdjacentElement("afterend", newElement);
+// target.insertAdjacentElement("afterend", newElement);
 
 
 //-------------------------------------------------------
@@ -30,7 +30,7 @@ var newElement = "<h2>This is the Heading </h2>";
 //uncomment one by one for better understanding.
 // target.insertAdjacentHTML("beforebegin", newElement);
 
-// target.insertAdjacentHTML("afterbegin", newElement);
+target.insertAdjacentHTML("afterbegin", newElement);
 
 // target.insertAdjacentHTML("beforeend", newElement);
 

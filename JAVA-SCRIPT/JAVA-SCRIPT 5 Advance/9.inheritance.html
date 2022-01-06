@@ -15,16 +15,18 @@
         }
 
         class manager extends employee{
-            constructor(department){
+            constructor(name, department){
             //this super will call the constructor of inherit class
             // without this, we will get error.
                 super(name);
-                console.log("dartment: " + department + "name: " + name)
+                console.log("dartment: " + department)
+                console.log("name: " + name)
             }
 
         }
 
-        let a = new manager("Amit");
+        let a = new manager("Amit" , "computer sciece");
+        
 
     </script>
 </body>

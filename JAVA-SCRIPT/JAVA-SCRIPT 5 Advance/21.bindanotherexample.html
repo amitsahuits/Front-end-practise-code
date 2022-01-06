@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function SomeFunction(callback) {
+        this.name = "kalli"; //window object name property
+
+        t = callback();
+        console.log(t);
+      }
+
+      obj1 = {
+        name: "avinash", //obj1 object name property
+      };
+
+      obj = {
+        name: "amit sahu", //obj object name property
+        getName: function () {
+          return this.name;
+          // console.log(this.name);
+        },
+      };
+      // console.log(obj.getName.bind(obj));
+      SomeFunction(obj.getName.bind(window));
+      SomeFunction(obj.getName.bind(obj1)); //avinash
+      SomeFunction(obj.getName.bind(obj)); //amit sahu
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- refer this blog post https://www.tutorialsteacher.com/javascript/this-keyword-in-javascript -->
+    <h1>Demo: (), call() & apply() </h1>
+	
+	<script>    
+	var myVar = 100;
+
+	function WhoIsThis() {
+		alert(this.myVar);
+	}
+
+
+	var obj1 = { myVar : 200 , whoIsThis: WhoIsThis };
+	var obj3 = { myVar : 150 , whoIsThis: function(){
+        alert(this.myVar)
+    } };
+
+	var obj2 = { myVar : 300 , whoIsThis: WhoIsThis };
+      
+    // obj3.whoIsThis()
+
+	// WhoIsThis(); // 100
+	
+	// WhoIsThis.call(obj1); // 200
+
+	// WhoIsThis.apply(obj2); // 300
+
+	// obj1.whoIsThis.call(window); // 100
+
+    // obj1.whoIsThis.call(obj2);
+
+	// WhoIsThis.apply(obj2); // 300
+
+	</script>
+</body>
+</html>
